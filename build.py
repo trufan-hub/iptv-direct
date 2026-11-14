@@ -75,31 +75,90 @@ def probe_manifest(url):
         return "unverified:" + type(exc).__name__
 
 
-def resolve(channel):
+def cached_streams():
+    """Read last published URLs; do not contact third-party playlists."""
+    result = {}
+    if not OUTPUT.exists():
+        return result
+    name = None
+    for line in OUTPUT.read_text(encoding="utf-8").splitlines():
+        if line.startswith("#EXTINF:"):
+            name = line.split(",", 1)[-1].strip()
+        elif line.startswith("https://") and name:
+            result[name] = line
+            name = None
+    return result
+
+
+def acceptable_stream(url):
+    if not isinstance(url, str) or len(url) > 2048:
+        return False
+    p = urlsplit(url)
+    return bool(p.scheme == "https" and p.hostname and not p.username)
+
+
+def resolve(channel, previous_url=None):
     result = {
         "name": channel["name"], "rutube_id": channel["rutube_id"],
-        "status": "unavailable", "probe": "not_checked"
+        "status": "unavailable", "api_status": "not_checked",
+        "probe": "not_checked", "source": "none"
     }
+    api_url = None
     for attempt in range(2):
         try:
             candidates = hls_options(load_options(channel["rutube_id"]))
             if not candidates:
-                result["status"] = "no_hls_in_api"
+                result["api_status"] = "no_hls_in_api"
+                break
+            api_url = candidates[0]
+            result["api_status"] = "resolved"
+            api_probe = probe_manifest(api_url)
+            if api_probe == "manifest_ok":
+                result.update(status="verified", probe=api_probe,
+                              source="rutube_api", _hls=api_url)
                 return result
-            result["_hls"] = candidates[0]
-            result["status"] = "api_resolved"
-            result["probe"] = probe_manifest(candidates[0])
-            return result
+            result["api_status"] = "url_unverified:" + api_probe
+            break
         except HTTPError as exc:
-            result["status"] = "api_http_" + str(exc.code)
+            result["api_status"] = "http_" + str(exc.code)
             if exc.code in (401, 403, 404, 451):
-                return result
+                break
             if attempt == 0:
-                time.sleep(1)
+                time.sleep(0.3)
         except (URLError, TimeoutError, OSError, ValueError, json.JSONDecodeError) as exc:
-            result["status"] = "api_error:" + type(exc).__name__
+            result["api_status"] = "error:" + type(exc).__name__
             if attempt == 0:
-                time.sleep(1)
+                time.sleep(0.3)
+
+    options = [
+        ("previous", previous_url),
+        ("bootstrap", channel.get("bootstrap_url")),
+    ]
+    if api_url:
+        options.append(("rutube_api_unverified", api_url))
+
+    seen = set()
+    first_usable = None
+    for source, url in options:
+        if not acceptable_stream(url) or url in seen:
+            continue
+        seen.add(url)
+        if first_usable is None:
+            first_usable = (source, url)
+        check = probe_manifest(url)
+        if check == "manifest_ok":
+            result.update(status="verified", probe=check,
+                          source=source, _hls=url)
+            return result
+        if result["probe"] == "not_checked":
+            result["probe"] = check
+
+    # A candidate can still play on the user's TV despite a blocked
+    # GitHub runner. Include it only in the full, *unverified* playlist.
+    if first_usable is not None:
+        source, url = first_usable
+        result.update(status="candidate_unverified",
+                      source=source, _hls=url)
     return result
 
 
@@ -117,41 +176,73 @@ def main():
             raise ValueError("Invalid Rutube ID in catalog")
         if not row.get("name") or row["rutube_id"] in seen:
             raise ValueError("Unnamed or duplicate channel")
+        if row.get("bootstrap_url") and not acceptable_stream(row["bootstrap_url"]):
+            raise ValueError("Invalid bootstrap URL")
         seen.add(row["rutube_id"])
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-        results = list(executor.map(resolve, channels))
+    previous = cached_streams()
+    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as executor:
+        results = list(executor.map(
+            lambda channel: resolve(channel, previous.get(channel["name"])),
+            channels
+        ))
 
-    playlist = [f'#EXTM3U url-tvg="{EPG}"',
-                "# Independent Rutube playback API source (not Dimonovich)",
-                "# Generated UTC: " + datetime.now(timezone.utc).isoformat()]
+    header = [
+        f'#EXTM3U url-tvg="{EPG}"',
+        "# Direct Rutube API plus one-time fallback snapshot",
+        "# Generated UTC: " + datetime.now(timezone.utc).isoformat()
+    ]
+    playlist = header.copy()
+    verified = header.copy()
     count = 0
+    verified_count = 0
     for channel, item in zip(channels, results):
-        if item["status"] != "api_resolved":
+        url = item.get("_hls")
+        if not url:
             continue
         meta = (f'tvg-id="{attr(channel.get("tvg_id", ""))}" '
                 f'tvg-name="{attr(channel["name"])}" group-title="Rutube Direct"')
-        playlist.append("#EXTINF:-1 " + meta + "," + channel["name"])
-        playlist.append("#EXTVLCOPT:http-user-agent=" + AGENT)
-        playlist.append(item["_hls"])
+        entry = [
+            "#EXTINF:-1 " + meta + "," + channel["name"],
+            "#EXTVLCOPT:http-user-agent=" + AGENT,
+            url
+        ]
+        playlist.extend(entry)
         count += 1
+        if item["status"] == "verified":
+            verified.extend(entry)
+            verified_count += 1
 
-    public = [{key: value for key, value in item.items() if key != "_hls"} for item in results]
+    public = [{key: value for key, value in item.items() if key != "_hls"}
+              for item in results]
     if count == 0:
-        print(json.dumps({"resolved": 0, "channels": public}, ensure_ascii=False, indent=2))
-        raise RuntimeError("API returned no HLS streams; preserving prior playlist")
+        print(json.dumps({"published": 0, "channels": public}, ensure_ascii=False))
+        raise RuntimeError("No candidate URLs; preserving prior playlist")
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text("\n".join(playlist) + "\n", encoding="utf-8")
+    Path("docs/verified.m3u").write_text(
+        "\n".join(verified) + "\n", encoding="utf-8"
+    )
     report = {
         "generated_utc": datetime.now(timezone.utc).isoformat(),
-        "catalog_count": len(channels), "resolved": count,
-        "manifest_ok": sum(x["probe"] == "manifest_ok" for x in results),
+        "catalog_count": len(channels),
+        "published": count,
+        "verified": verified_count,
+        "unverified": count - verified_count,
+        "api_updated": sum(x["source"] == "rutube_api" for x in results),
+        "previous_used": sum(x["source"] == "previous" for x in results),
+        "bootstrap_used": sum(x["source"] == "bootstrap" for x in results),
         "channels": public,
     }
-    REPORT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(json.dumps({"catalog_count": len(channels), "resolved": count,
-                      "manifest_ok": report["manifest_ok"]}, ensure_ascii=False))
+    REPORT.write_text(
+        json.dumps(report, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8"
+    )
+    print(json.dumps(
+        {k: v for k, v in report.items() if k != "channels"},
+        ensure_ascii=False
+    ))
 
 
 if __name__ == "__main__":
