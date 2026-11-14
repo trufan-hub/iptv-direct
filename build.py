@@ -90,7 +90,13 @@ def resolve(channel):
             result["status"] = "api_resolved"
             result["probe"] = probe_manifest(candidates[0])
             return result
-        except (HTTPError, URLError, TimeoutError, OSError, ValueError, json.JSONDecodeError) as exc:
+        except HTTPError as exc:
+            result["status"] = "api_http_" + str(exc.code)
+            if exc.code in (401, 403, 404, 451):
+                return result
+            if attempt == 0:
+                time.sleep(1)
+        except (URLError, TimeoutError, OSError, ValueError, json.JSONDecodeError) as exc:
             result["status"] = "api_error:" + type(exc).__name__
             if attempt == 0:
                 time.sleep(1)
