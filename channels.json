@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Первый канал HD",
+    "rutube_id": "c58f502c7bb34a8fcdd976b221fca292",
+    "tvg_id": "pervy"
+  },
+  {
+    "name": "НТВ HD",
+    "rutube_id": "c37cd74192c6bc3d6cd6077c0c4fd686",
+    "tvg_id": "ntv"
+  },
+  {
+    "name": "ТНТ HD",
+    "rutube_id": "546602986e6a424d74d594876ddb3f04",
+    "tvg_id": "tnt"
+  },
+  {
+    "name": "ТНТ4 HD",
+    "rutube_id": "c801a7087e29a097192d74c270fbc6c1",
+    "tvg_id": "tnt4"
+  },
+  {
+    "name": "Москва-24",
+    "rutube_id": "ca70d39eba2e8771358bbcb4bfbad860",
+    "tvg_id": "moskva-24"
+  },
+  {
+    "name": "Пятница HD",
+    "rutube_id": "9f87a9a0cecbe773be6fddcbd93585ac",
+    "tvg_id": "piatnica"
+  },
+  {
+    "name": "ТВ3 HD",
+    "rutube_id": "7bf12d9c050f9a7ef3728db5730432ae",
+    "tvg_id": "tv3-ru"
+  },
+  {
+    "name": "2x2",
+    "rutube_id": "392b4686b770bae2da6bf5ac4574add5",
+    "tvg_id": "2na2"
+  },
+  {
+    "name": "Суббота!",
+    "rutube_id": "310744c10a5809da38aa445c952976da",
+    "tvg_id": "super"
+  },
+  {
+    "name": "Ю",
+    "rutube_id": "5c9327074e25ca86f3111d4085cbbb65",
+    "tvg_id": "yu"
+  },
+  {
+    "name": "Охотник и рыболов",
+    "rutube_id": "1da5d92af8c55b16241f1eb12a27f00c",
+    "tvg_id": "1681"
+  },
+  {
+    "name": "CGTN Русский",
+    "rutube_id": "f785d738a845cc80658e887843a18ed9",
+    "tvg_id": "cctv-ru"
+  }
+]
