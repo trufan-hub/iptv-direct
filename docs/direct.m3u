@@ -1,21 +1,21 @@
 #EXTM3U url-tvg="https://iptvx.one/EPG,http://epg.one/epg2.xml.gz"
 # Independent Rutube playback API source (not Dimonovich)
-# Generated UTC: 2026-11-14T18:48:40.625890+00:00
+# Generated UTC: 2026-11-14T18:50:08.222984+00:00
 #EXTINF:-1 tvg-id="pervy" tvg-name="Первый канал HD" group-title="Rutube Direct",Первый канал HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/c58f502c7bb34a8fcdd976b221fca292/index.m3u8?s=HGwaMQWEbHvVBjo01PNN9w&e=2094682111&scheme=https
+https://bl.rutube.ru/livestream/c58f502c7bb34a8fcdd976b221fca292/index.m3u8?s=Fcr9rEvGoGYLg2GsNfb7lA&e=2094682203&scheme=https
 #EXTINF:-1 tvg-id="ntv" tvg-name="НТВ HD" group-title="Rutube Direct",НТВ HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/c37cd74192c6bc3d6cd6077c0c4fd686/index.m3u8?s=V5w6WV65sadG3OPjZQ3VRA&e=2094682111&scheme=https
+https://bl.rutube.ru/livestream/c37cd74192c6bc3d6cd6077c0c4fd686/index.m3u8?s=JnSbJOoeBwutw61YJwWikA&e=2094682203&scheme=https
 #EXTINF:-1 tvg-id="moskva-24" tvg-name="Москва-24" group-title="Rutube Direct",Москва-24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/ca70d39eba2e8771358bbcb4bfbad860/index.m3u8?s=QK0gZ7eYlunWbis9QXEjMQ&e=2094682113&scheme=https
+https://bl.rutube.ru/livestream/ca70d39eba2e8771358bbcb4bfbad860/index.m3u8?s=sXucLz7TCbx5wqz4-bqgvA&e=2094682204&scheme=https
 #EXTINF:-1 tvg-id="super" tvg-name="Суббота!" group-title="Rutube Direct",Суббота!
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/310744c10a5809da38aa445c952976da/index.m3u8?s=LzqfGNc217eM3M50laUxGQ&e=2094682115&scheme=https
+https://bl.rutube.ru/livestream/310744c10a5809da38aa445c952976da/index.m3u8?s=wrHLsrkdQpT7yBr-5TEYng&e=2094682205&scheme=https
 #EXTINF:-1 tvg-id="1681" tvg-name="Охотник и рыболов" group-title="Rutube Direct",Охотник и рыболов
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/1da5d92af8c55b16241f1eb12a27f00c/index.m3u8?s=n2p4UsIEfHS02WW0nJRIMQ&e=2094682117&scheme=https
+https://bl.rutube.ru/livestream/1da5d92af8c55b16241f1eb12a27f00c/index.m3u8?s=vzmZNgKpd1MN-e9eqxYXfg&e=2094682205&scheme=https
 #EXTINF:-1 tvg-id="cctv-ru" tvg-name="CGTN Русский" group-title="Rutube Direct",CGTN Русский
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/f785d738a845cc80658e887843a18ed9/index.m3u8?s=bugahznu1QcuGGIvxyliRA&e=2094682118&scheme=https
+https://bl.rutube.ru/livestream/f785d738a845cc80658e887843a18ed9/index.m3u8?s=EwGL2FJXamZeAfmWSCTowA&e=2094682206&scheme=https

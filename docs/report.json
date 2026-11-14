@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-14T18:48:40.626191+00:00",
+  "generated_utc": "2026-11-14T18:50:08.223279+00:00",
   "catalog_count": 12,
   "resolved": 6,
   "manifest_ok": 5,
@@ -19,13 +19,13 @@
     {
       "name": "ТНТ HD",
       "rutube_id": "546602986e6a424d74d594876ddb3f04",
-      "status": "api_error:HTTPError",
+      "status": "api_http_404",
       "probe": "not_checked"
     },
     {
       "name": "ТНТ4 HD",
       "rutube_id": "c801a7087e29a097192d74c270fbc6c1",
-      "status": "api_error:HTTPError",
+      "status": "api_http_404",
       "probe": "not_checked"
     },
     {
@@ -37,19 +37,19 @@
     {
       "name": "Пятница HD",
       "rutube_id": "9f87a9a0cecbe773be6fddcbd93585ac",
-      "status": "api_error:HTTPError",
+      "status": "api_http_404",
       "probe": "not_checked"
     },
     {
       "name": "ТВ3 HD",
       "rutube_id": "7bf12d9c050f9a7ef3728db5730432ae",
-      "status": "api_error:HTTPError",
+      "status": "api_http_404",
       "probe": "not_checked"
     },
     {
       "name": "2x2",
       "rutube_id": "392b4686b770bae2da6bf5ac4574add5",
-      "status": "api_error:HTTPError",
+      "status": "api_http_404",
       "probe": "not_checked"
     },
     {
@@ -61,7 +61,7 @@
     {
       "name": "Ю",
       "rutube_id": "5c9327074e25ca86f3111d4085cbbb65",
-      "status": "api_error:HTTPError",
+      "status": "api_http_404",
       "probe": "not_checked"
     },
     {
