@@ -1,12 +1,12 @@
 {
-  "generated_utc": "2026-11-14T19:23:48.613348+00:00",
+  "generated_utc": "2026-11-15T01:30:20.747862+00:00",
   "catalog_count": 169,
   "published": 169,
   "verified": 163,
   "unverified": 6,
   "api_updated": 109,
-  "previous_used": 1,
-  "bootstrap_used": 59,
+  "previous_used": 59,
+  "bootstrap_used": 0,
   "channels": [
     {
       "name": "Rutube TV",
@@ -38,7 +38,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "ТНТ4 HD",
@@ -46,15 +46,15 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Москва-24",
       "rutube_id": "ca70d39eba2e8771358bbcb4bfbad860",
       "status": "verified",
-      "api_status": "resolved",
+      "api_status": "url_unverified:unverified:HTTPError",
       "probe": "manifest_ok",
-      "source": "rutube_api"
+      "source": "rutube_api_unverified"
     },
     {
       "name": "Пятница HD",
@@ -62,7 +62,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "ТВ3 HD",
@@ -70,7 +70,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "2x2",
@@ -78,7 +78,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Суббота!",
@@ -94,7 +94,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "CGTN Русский",
@@ -126,7 +126,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Discovery Channel",
@@ -134,7 +134,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "National Geographic",
@@ -142,7 +142,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "TLC",
@@ -150,7 +150,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Загородный International",
@@ -196,9 +196,9 @@
       "name": "Дорамы",
       "rutube_id": "5e3edd063411550ed6b67a8c0d7c96ea",
       "status": "verified",
-      "api_status": "http_404",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "rutube_api"
     },
     {
       "name": "Индийские фильмы",
@@ -206,7 +206,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Турецкие фильмы",
@@ -214,7 +214,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Латиноамериканские фильмы",
@@ -222,7 +222,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Фильмач",
@@ -230,7 +230,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Детективы каждый день",
@@ -246,7 +246,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Экшн фильмы",
@@ -254,7 +254,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Apple TV+Action Time",
@@ -262,7 +262,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Драматические фильмы",
@@ -270,7 +270,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Epic Media Love",
@@ -294,7 +294,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Amazon Prime Video Romance",
@@ -302,7 +302,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Звездные войны",
@@ -310,7 +310,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Гарри Поттер",
@@ -318,7 +318,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Властелин колец",
@@ -326,7 +326,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Marvel",
@@ -334,7 +334,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Вселенная DC",
@@ -350,7 +350,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "HHQ",
@@ -390,7 +390,7 @@
       "status": "candidate_unverified",
       "api_status": "url_unverified:unverified:HTTPError",
       "probe": "unverified:HTTPError",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Сургут 86 FHD",
@@ -486,7 +486,7 @@
       "status": "candidate_unverified",
       "api_status": "url_unverified:unverified:HTTPError",
       "probe": "unverified:HTTPError",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Таврия",
@@ -574,7 +574,7 @@
       "status": "candidate_unverified",
       "api_status": "url_unverified:unverified:HTTPError",
       "probe": "unverified:HTTPError",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "ЛТВ (Люберцы)",
@@ -646,7 +646,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "АРИС 24",
@@ -670,7 +670,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Мир",
@@ -678,7 +678,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Губерния 33",
@@ -782,7 +782,7 @@
       "status": "candidate_unverified",
       "api_status": "url_unverified:unverified:HTTPError",
       "probe": "unverified:HTTPError",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "ННТВ",
@@ -958,7 +958,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Рика и Морти",
@@ -966,7 +966,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Анимач",
@@ -974,7 +974,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Мультимейшн",
@@ -982,7 +982,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Мультач",
@@ -990,7 +990,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Радость моя",
@@ -1006,7 +1006,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Смайлик ТВ",
@@ -1022,7 +1022,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Ключайка",
@@ -1038,7 +1038,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Смотри Радио",
@@ -1054,7 +1054,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Activa TV",
@@ -1062,7 +1062,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "RU.TV",
@@ -1078,7 +1078,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "ТНТ Music",
@@ -1102,7 +1102,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "МузСоюз",
@@ -1246,7 +1246,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "NHL Network [US]",
@@ -1254,7 +1254,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "TNT SPORTS 1 HD",
@@ -1262,7 +1262,7 @@
       "status": "candidate_unverified",
       "api_status": "http_404",
       "probe": "unverified:HTTPError",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Red Bull TV",
@@ -1270,7 +1270,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "NBA TV",
@@ -1278,7 +1278,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "SKY SPORTS CRICKET",
@@ -1286,7 +1286,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Sky Sports Golf",
@@ -1294,7 +1294,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Sky Sports Premier League",
@@ -1302,7 +1302,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Sky Sports Racing",
@@ -1310,7 +1310,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Sky Sports Tennis",
@@ -1318,7 +1318,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Sports Grid",
@@ -1326,7 +1326,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "TVS Classic Sports",
@@ -1334,7 +1334,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "beIN SPORTS XTRA Español",
@@ -1342,7 +1342,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     },
     {
       "name": "Волейбол",
@@ -1358,7 +1358,7 @@
       "status": "verified",
       "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "previous"
     }
   ]
 }
