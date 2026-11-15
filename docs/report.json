@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-15T07:29:35.078633+00:00",
+  "generated_utc": "2026-11-15T13:17:25.412860+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 163,
-  "unverified": 6,
-  "api_updated": 109,
-  "previous_used": 60,
+  "verified": 162,
+  "unverified": 7,
+  "api_updated": 110,
+  "previous_used": 59,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -196,9 +196,9 @@
       "name": "Дорамы",
       "rutube_id": "5e3edd063411550ed6b67a8c0d7c96ea",
       "status": "verified",
-      "api_status": "http_404",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Индийские фильмы",
@@ -1323,9 +1323,9 @@
     {
       "name": "Sports Grid",
       "rutube_id": "afc3073ec3efc6cb70c88ce6acaf4344",
-      "status": "verified",
+      "status": "candidate_unverified",
       "api_status": "http_404",
-      "probe": "manifest_ok",
+      "probe": "unverified:HTTPError",
       "source": "previous"
     },
     {
