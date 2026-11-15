@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-15T01:30:20.747862+00:00",
+  "generated_utc": "2026-11-15T07:29:35.078633+00:00",
   "catalog_count": 169,
   "published": 169,
   "verified": 163,
   "unverified": 6,
   "api_updated": 109,
-  "previous_used": 59,
+  "previous_used": 60,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -52,9 +52,9 @@
       "name": "Москва-24",
       "rutube_id": "ca70d39eba2e8771358bbcb4bfbad860",
       "status": "verified",
-      "api_status": "url_unverified:unverified:HTTPError",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "rutube_api_unverified"
+      "source": "rutube_api"
     },
     {
       "name": "Пятница HD",
@@ -196,9 +196,9 @@
       "name": "Дорамы",
       "rutube_id": "5e3edd063411550ed6b67a8c0d7c96ea",
       "status": "verified",
-      "api_status": "resolved",
+      "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "rutube_api"
+      "source": "previous"
     },
     {
       "name": "Индийские фильмы",
