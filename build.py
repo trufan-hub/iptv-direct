@@ -15,7 +15,7 @@ from urllib.request import Request, urlopen
 CATALOG = Path("channels.json")
 OUTPUT = Path("docs/direct.m3u")
 REPORT = Path("docs/report.json")
-EPG = "https://trufan-hub.github.io/iptv-direct/guide.xml.gz"
+EPG = "https://trufan-hub.github.io/iptv-direct/guide.xml"
 AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
 ID_RE = re.compile(r"^[0-9a-f]{32}$")
 
