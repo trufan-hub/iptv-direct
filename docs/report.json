@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-16T21:17:17.753764+00:00",
+  "generated_utc": "2026-11-16T21:50:18.796364+00:00",
   "catalog_count": 169,
   "published": 169,
   "verified": 163,
   "unverified": 6,
-  "api_updated": 110,
-  "previous_used": 59,
+  "api_updated": 109,
+  "previous_used": 60,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -1036,9 +1036,9 @@
       "name": "Музыкальные клипы",
       "rutube_id": "e7e04192431a24a750fd8704fa221461",
       "status": "verified",
-      "api_status": "resolved",
+      "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "rutube_api"
+      "source": "previous"
     },
     {
       "name": "Смотри Радио",
