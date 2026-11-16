@@ -28,7 +28,6 @@ FEEDS = (
     ("EPG.ONE", ("https://epg.one/epg2.xml.gz",
                   "http://epg.one/epg2.xml.gz")),
 )
-MAX_DOWNLOAD = 45_000_000
 UA = "Mozilla/5.0 (compatible; TruFan-IPTV-Guide/1.0)"
 QUALITY = re.compile(r"\s+(?:hd|fhd|uhd|4k|full\s+hd|sd)$", re.I)
 
@@ -44,20 +43,39 @@ def own_id(channel):
     return "rtv." + channel["rutube_id"]
 
 
-def fetch_feed(url):
+class PrefixReader:
+    """Allow a short magic-header read without buffering a huge XMLTV file."""
+    def __init__(self, prefix, source):
+        self.prefix = prefix
+        self.source = source
+        self.bytes_read = 0
+
+    def read(self, size=-1):
+        if size < 0:
+            size = 65536
+        head = self.prefix[:size]
+        self.prefix = self.prefix[len(head):]
+        body = self.source.read(size - len(head)) if len(head) < size else b""
+        self.bytes_read += len(head) + len(body)
+        if self.bytes_read > 350_000_000:
+            raise ValueError("EPG download exceeds 350 MB")
+        return head + body
+
+
+def parse_url(url, channels, utc_date):
     request = Request(url, headers={
         "User-Agent": UA,
         "Accept": "application/xml,application/gzip,*/*"
     })
-    with urlopen(request, timeout=50) as response:
-        raw = response.read(MAX_DOWNLOAD + 1)
-    if len(raw) > MAX_DOWNLOAD:
-        raise ValueError("Guide download exceeds safety limit")
-    if raw.startswith(b"\x1f\x8b"):
-        return gzip.GzipFile(fileobj=io.BytesIO(raw))
-    if raw.lstrip().startswith(b"<"):
-        return io.BytesIO(raw)
-    raise ValueError("Not an XMLTV or gzip document")
+    with urlopen(request, timeout=70) as response:
+        head = response.read(2)
+        stream = PrefixReader(head, response)
+        if head == b"\x1f\x8b":
+            with gzip.GzipFile(fileobj=stream) as xml:
+                return parse_provider(xml, channels, utc_date)
+        if head not in (b"<?", b"<t", b"\xef\xbb"):
+            raise ValueError("Unexpected XMLTV response header")
+        return parse_provider(stream, channels, utc_date)
 
 
 def parse_provider(stream, channels, utc_date):
@@ -123,8 +141,7 @@ def main():
     for label, mirrors in FEEDS:
         for url in mirrors:
             try:
-                with fetch_feed(url) as stream:
-                    programmes, count = parse_provider(stream, channels, now.date())
+                programmes, count = parse_url(url, channels, now.date())
                 if count < 50:
                     raise ValueError("Too few channels in provider XMLTV")
                 added = 0
