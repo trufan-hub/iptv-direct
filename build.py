@@ -15,7 +15,7 @@ from urllib.request import Request, urlopen
 CATALOG = Path("channels.json")
 OUTPUT = Path("docs/direct.m3u")
 REPORT = Path("docs/report.json")
-EPG = "https://iptvx.one/EPG,http://epg.one/epg2.xml.gz"
+EPG = "https://trufan-hub.github.io/iptv-direct/guide.xml.gz"
 AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
 ID_RE = re.compile(r"^[0-9a-f]{32}$")
 
@@ -200,7 +200,7 @@ def main():
         url = item.get("_hls")
         if not url:
             continue
-        meta = (f'tvg-id="{attr(channel.get("tvg_id", ""))}" '
+        meta = (f'tvg-id="{attr("rtv." + channel["rutube_id"])}" '
                 f'tvg-name="{attr(channel["name"])}" group-title="Rutube Direct"')
         entry = [
             "#EXTINF:-1 " + meta + "," + channel["name"],
