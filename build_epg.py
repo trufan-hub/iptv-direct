@@ -198,6 +198,8 @@ def main():
     if parsed.tag != "tv" or len(parsed.findall("programme")) < 100:
         raise RuntimeError("Generated XMLTV failed validation")
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    # Publish both XMLTV transports: plain XML maximizes TV-player compatibility.
+    Path("docs/guide.xml").write_bytes(document)
     OUTPUT.write_bytes(gzip.compress(document, compresslevel=8, mtime=0))
     report = {
         "updated_at": now.isoformat(),
@@ -205,6 +207,7 @@ def main():
         "guide_channels": len(combined),
         "programmes": len(parsed.findall("programme")),
         "compressed_bytes": OUTPUT.stat().st_size,
+        "uncompressed_bytes": Path("docs/guide.xml").stat().st_size,
         "feeds": sources,
         "warnings": errors,
     }
