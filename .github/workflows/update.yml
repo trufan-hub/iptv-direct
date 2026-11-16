@@ -7,6 +7,7 @@ on:
     branches: [main]
     paths:
       - 'build.py'
+      - 'build_epg.py'
       - 'channels.json'
       - '.github/workflows/update.yml'
 
@@ -35,11 +36,13 @@ jobs:
           python-version: '3.12'
       - name: Resolve direct Rutube HLS streams
         run: python build.py
+      - name: Build self-hosted EPG guide
+        run: python build_epg.py
       - name: Commit latest direct M3U
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/direct.m3u docs/verified.m3u docs/report.json
+          git add docs/direct.m3u docs/verified.m3u docs/report.json docs/guide.xml.gz docs/epg_status.json
           if ! git diff --cached --quiet; then
             git commit -m 'Update direct IPTV streams'
             git fetch origin main
