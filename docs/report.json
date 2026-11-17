@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-17T13:35:10.689956+00:00",
+  "generated_utc": "2026-11-17T19:26:55.149336+00:00",
   "catalog_count": 169,
   "published": 169,
   "verified": 164,
   "unverified": 5,
-  "api_updated": 111,
-  "previous_used": 58,
+  "api_updated": 110,
+  "previous_used": 59,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -196,9 +196,9 @@
       "name": "Дорамы",
       "rutube_id": "5e3edd063411550ed6b67a8c0d7c96ea",
       "status": "verified",
-      "api_status": "resolved",
+      "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "rutube_api"
+      "source": "previous"
     },
     {
       "name": "Индийские фильмы",
