@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-17T07:42:27.804494+00:00",
+  "generated_utc": "2026-11-17T13:35:10.689956+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 163,
-  "unverified": 6,
-  "api_updated": 109,
-  "previous_used": 60,
+  "verified": 164,
+  "unverified": 5,
+  "api_updated": 111,
+  "previous_used": 58,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -196,9 +196,9 @@
       "name": "Дорамы",
       "rutube_id": "5e3edd063411550ed6b67a8c0d7c96ea",
       "status": "verified",
-      "api_status": "http_404",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Индийские фильмы",
@@ -571,10 +571,10 @@
     {
       "name": "Илли ТВ",
       "rutube_id": "eda2da42eea89951e4135141a30915f7",
-      "status": "candidate_unverified",
-      "api_status": "url_unverified:unverified:HTTPError",
-      "probe": "unverified:HTTPError",
-      "source": "previous"
+      "status": "verified",
+      "api_status": "resolved",
+      "probe": "manifest_ok",
+      "source": "rutube_api"
     },
     {
       "name": "ЛТВ (Люберцы)",
