@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-18T13:37:52.713220+00:00",
+  "generated_utc": "2026-11-18T19:19:53.952542+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 160,
-  "unverified": 9,
-  "api_updated": 109,
-  "previous_used": 60,
+  "verified": 161,
+  "unverified": 8,
+  "api_updated": 112,
+  "previous_used": 57,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -123,9 +123,9 @@
     {
       "name": "Документалки и шоу",
       "rutube_id": "eddcc86d1dee0b5def546ea388eb38ea",
-      "status": "candidate_unverified",
+      "status": "verified",
       "api_status": "http_404",
-      "probe": "unverified:HTTPError",
+      "probe": "manifest_ok",
       "source": "previous"
     },
     {
@@ -196,9 +196,9 @@
       "name": "Дорамы",
       "rutube_id": "5e3edd063411550ed6b67a8c0d7c96ea",
       "status": "verified",
-      "api_status": "http_404",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Индийские фильмы",
@@ -796,9 +796,9 @@
       "name": "МТВ Волгоград",
       "rutube_id": "1839496ed8242ed47f5c540e25d4ba3f",
       "status": "verified",
-      "api_status": "url_unverified:unverified:HTTPError",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Енисей +4 (Орион)",
@@ -1172,9 +1172,9 @@
       "name": "Record Russian Mix",
       "rutube_id": "2f3e5c6a66617c063f12d8d5d49248c7",
       "status": "verified",
-      "api_status": "url_unverified:unverified:HTTPError",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Record Deep",
