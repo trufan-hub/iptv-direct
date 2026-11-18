@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-18T07:41:10.242055+00:00",
+  "generated_utc": "2026-11-18T13:37:52.713220+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 164,
-  "unverified": 5,
-  "api_updated": 110,
-  "previous_used": 59,
+  "verified": 160,
+  "unverified": 9,
+  "api_updated": 109,
+  "previous_used": 60,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -123,33 +123,33 @@
     {
       "name": "Документалки и шоу",
       "rutube_id": "eddcc86d1dee0b5def546ea388eb38ea",
-      "status": "verified",
+      "status": "candidate_unverified",
       "api_status": "http_404",
-      "probe": "manifest_ok",
+      "probe": "unverified:HTTPError",
       "source": "previous"
     },
     {
       "name": "Discovery Channel",
       "rutube_id": "6422d62f7e1f87bc3aec45b462cd89ea",
-      "status": "verified",
+      "status": "candidate_unverified",
       "api_status": "http_404",
-      "probe": "manifest_ok",
+      "probe": "unverified:HTTPError",
       "source": "previous"
     },
     {
       "name": "National Geographic",
       "rutube_id": "2619fc295c16585ef018041d88f14db0",
-      "status": "verified",
+      "status": "candidate_unverified",
       "api_status": "http_404",
-      "probe": "manifest_ok",
+      "probe": "unverified:HTTPError",
       "source": "previous"
     },
     {
       "name": "TLC",
       "rutube_id": "7c3d1a4cc0b4dff1176aa2dbb0b90000",
-      "status": "verified",
+      "status": "candidate_unverified",
       "api_status": "http_404",
-      "probe": "manifest_ok",
+      "probe": "unverified:HTTPError",
       "source": "previous"
     },
     {
@@ -796,9 +796,9 @@
       "name": "МТВ Волгоград",
       "rutube_id": "1839496ed8242ed47f5c540e25d4ba3f",
       "status": "verified",
-      "api_status": "resolved",
+      "api_status": "url_unverified:unverified:HTTPError",
       "probe": "manifest_ok",
-      "source": "rutube_api"
+      "source": "previous"
     },
     {
       "name": "Енисей +4 (Орион)",
@@ -1036,9 +1036,9 @@
       "name": "Музыкальные клипы",
       "rutube_id": "e7e04192431a24a750fd8704fa221461",
       "status": "verified",
-      "api_status": "http_404",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Смотри Радио",
@@ -1172,9 +1172,9 @@
       "name": "Record Russian Mix",
       "rutube_id": "2f3e5c6a66617c063f12d8d5d49248c7",
       "status": "verified",
-      "api_status": "resolved",
+      "api_status": "url_unverified:unverified:HTTPError",
       "probe": "manifest_ok",
-      "source": "rutube_api"
+      "source": "previous"
     },
     {
       "name": "Record Deep",
