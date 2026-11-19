@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-18T19:19:53.952542+00:00",
+  "generated_utc": "2026-11-19T01:37:30.496653+00:00",
   "catalog_count": 169,
   "published": 169,
   "verified": 161,
   "unverified": 8,
-  "api_updated": 112,
-  "previous_used": 57,
+  "api_updated": 110,
+  "previous_used": 59,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -196,9 +196,9 @@
       "name": "Дорамы",
       "rutube_id": "5e3edd063411550ed6b67a8c0d7c96ea",
       "status": "verified",
-      "api_status": "resolved",
+      "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "rutube_api"
+      "source": "previous"
     },
     {
       "name": "Индийские фильмы",
@@ -1036,9 +1036,9 @@
       "name": "Музыкальные клипы",
       "rutube_id": "e7e04192431a24a750fd8704fa221461",
       "status": "verified",
-      "api_status": "resolved",
+      "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "rutube_api"
+      "source": "previous"
     },
     {
       "name": "Смотри Радио",
