@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-19T07:43:16.619367+00:00",
+  "generated_utc": "2026-11-19T13:39:43.437962+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 161,
-  "unverified": 8,
-  "api_updated": 110,
-  "previous_used": 59,
+  "verified": 160,
+  "unverified": 9,
+  "api_updated": 109,
+  "previous_used": 60,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -699,10 +699,10 @@
     {
       "name": "ТМК",
       "rutube_id": "740503607d216b5d467694a1e8fb39a8",
-      "status": "verified",
-      "api_status": "resolved",
-      "probe": "manifest_ok",
-      "source": "rutube_api"
+      "status": "candidate_unverified",
+      "api_status": "url_unverified:unverified:HTTPError",
+      "probe": "unverified:HTTPError",
+      "source": "previous"
     },
     {
       "name": "Мой мир",
