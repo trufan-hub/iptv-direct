@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-11-20T07:41:51.910941+00:00",
+  "generated_utc": "2026-11-20T13:35:17.712558+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 160,
-  "unverified": 9,
+  "verified": 164,
+  "unverified": 5,
   "api_updated": 109,
   "previous_used": 60,
   "bootstrap_used": 0,
@@ -131,25 +131,25 @@
     {
       "name": "Discovery Channel",
       "rutube_id": "6422d62f7e1f87bc3aec45b462cd89ea",
-      "status": "candidate_unverified",
+      "status": "verified",
       "api_status": "http_404",
-      "probe": "unverified:HTTPError",
+      "probe": "manifest_ok",
       "source": "previous"
     },
     {
       "name": "National Geographic",
       "rutube_id": "2619fc295c16585ef018041d88f14db0",
-      "status": "candidate_unverified",
+      "status": "verified",
       "api_status": "http_404",
-      "probe": "unverified:HTTPError",
+      "probe": "manifest_ok",
       "source": "previous"
     },
     {
       "name": "TLC",
       "rutube_id": "7c3d1a4cc0b4dff1176aa2dbb0b90000",
-      "status": "candidate_unverified",
+      "status": "verified",
       "api_status": "http_404",
-      "probe": "unverified:HTTPError",
+      "probe": "manifest_ok",
       "source": "previous"
     },
     {
@@ -1259,9 +1259,9 @@
     {
       "name": "TNT SPORTS 1 HD",
       "rutube_id": "3aa782bace452e7c4b9f81d767512147",
-      "status": "candidate_unverified",
+      "status": "verified",
       "api_status": "http_404",
-      "probe": "unverified:HTTPError",
+      "probe": "manifest_ok",
       "source": "previous"
     },
     {
