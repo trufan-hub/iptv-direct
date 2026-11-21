@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-21T07:33:51.154973+00:00",
+  "generated_utc": "2026-11-21T13:21:57.628579+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 163,
-  "unverified": 6,
-  "api_updated": 107,
-  "previous_used": 62,
+  "verified": 164,
+  "unverified": 5,
+  "api_updated": 111,
+  "previous_used": 58,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -196,9 +196,9 @@
       "name": "Дорамы",
       "rutube_id": "5e3edd063411550ed6b67a8c0d7c96ea",
       "status": "verified",
-      "api_status": "http_404",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Индийские фильмы",
@@ -555,10 +555,10 @@
     {
       "name": "Сангат",
       "rutube_id": "dce1080977de5e89dcbd1dd24d014b4e",
-      "status": "candidate_unverified",
-      "api_status": "url_unverified:unverified:HTTPError",
-      "probe": "unverified:HTTPError",
-      "source": "previous"
+      "status": "verified",
+      "api_status": "resolved",
+      "probe": "manifest_ok",
+      "source": "rutube_api"
     },
     {
       "name": "Волга",
@@ -892,9 +892,9 @@
       "name": "ОТР",
       "rutube_id": "faa934385b83f9e8a92f5484defae5fa",
       "status": "verified",
-      "api_status": "url_unverified:unverified:HTTPError",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Истоки Орёл",
@@ -1036,9 +1036,9 @@
       "name": "Музыкальные клипы",
       "rutube_id": "e7e04192431a24a750fd8704fa221461",
       "status": "verified",
-      "api_status": "http_404",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Смотри Радио",
