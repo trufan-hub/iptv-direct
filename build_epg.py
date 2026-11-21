@@ -19,6 +19,7 @@ from urllib.parse import urlsplit
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree as ET
+from logo_cache import merge_logos, add_logos_to_playlist, save_registry
 
 CATALOG = Path("channels.json")
 OUTPUT = Path("docs/guide.xml.gz")
@@ -176,6 +177,18 @@ def main():
                 errors.append(error)
                 print("WARNING: " + error)
     total_events = sum(len(p) for p in combined.values())
+    # Prevent a transient upstream outage from publishing a sharply reduced EPG.
+    if STATUS.exists():
+        previous = json.loads(STATUS.read_text(encoding="utf-8"))
+        previous_channels = int(previous.get("guide_channels", 0))
+        if previous_channels >= 30 and len(combined) * 100 < previous_channels * 80:
+            raise RuntimeError(
+                "Guide coverage regression: "
+                + str(previous_channels) + " -> " + str(len(combined))
+            )
+
+    provider_logo_count = len(logos)
+    logos, cached_logo_count = merge_logos(logos, ["docs/direct.m3u","docs/verified.m3u"])
     if len(combined) < 20 or total_events < 100:
         raise RuntimeError(
             f"Refusing to publish insufficient guide: "
@@ -217,32 +230,20 @@ def main():
     # Publish both XMLTV transports: plain XML maximizes TV-player compatibility.
     Path("docs/guide.xml").write_bytes(document)
     OUTPUT.write_bytes(gzip.compress(document, compresslevel=8, mtime=0))
-    # Embed logos in each M3U entry as well as XMLTV channel metadata.
-    updated_playlists = {}
-    for filename in ("docs/direct.m3u", "docs/verified.m3u"):
-        filename_path = Path(filename)
-        raw_lines = filename_path.read_text(encoding="utf-8").splitlines()
-        count = 0
-        for idx, line in enumerate(raw_lines):
-            if not line.startswith("#EXTINF:") or "tvg-logo=" in line:
-                continue
-            found = re.search(r'tvg-id="(rtv\.[0-9a-f]{32})"', line)
-            logo_url = logos.get(found.group(1)) if found else None
-            if logo_url:
-                before, sep, after = line.partition(",")
-                if sep:
-                    raw_lines[idx] = before + ' tvg-logo="' + logo_url + '",' + after
-                    count += 1
-        if count:
-            filename_path.write_text("\n".join(raw_lines) + "\n", encoding="utf-8")
-        updated_playlists[filename] = count
+    # Persistent IDs prevent provider or EPG changes from removing old logos.
+    logo_counts = {}
+    for filename in ["docs/direct.m3u","docs/verified.m3u"]:
+        logo_counts[filename] = add_logos_to_playlist(filename, logos)
+    save_registry(logos)
     report = {
         "updated_at": now.isoformat(),
         "catalog_channels": len(channels),
         "guide_channels": len(combined),
         "programmes": len(parsed.findall("programme")),
-        "provider_logo_count": len(logos),
-        "logos_added_to_m3u": updated_playlists,
+        "provider_logo_count": provider_logo_count,
+        "cached_logo_count": cached_logo_count,
+        "logo_registry_count": len(logos),
+        "logos_added_to_m3u": logo_counts,
         "compressed_bytes": OUTPUT.stat().st_size,
         "uncompressed_bytes": Path("docs/guide.xml").stat().st_size,
         "feeds": sources,
