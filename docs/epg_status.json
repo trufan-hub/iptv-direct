@@ -1,9 +1,11 @@
 {
-  "updated_at": "2026-11-21T20:07:44.579839+00:00",
+  "updated_at": "2026-11-21T20:14:24.071807+00:00",
   "catalog_channels": 169,
   "guide_channels": 101,
   "programmes": 12916,
   "provider_logo_count": 101,
+  "cached_logo_count": 101,
+  "logo_registry_count": 101,
   "logos_added_to_m3u": {
     "docs/direct.m3u": 101,
     "docs/verified.m3u": 97
