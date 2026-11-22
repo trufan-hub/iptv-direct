@@ -95,5 +95,13 @@
       "https://void.greenhosting.ru/PingvinsLV_Mpeg4/video.m3u8"
     ],
     "notes": "Публичный каталог; геоограничения"
+  },
+  {
+    "name": "3+ (TV3 Plus)",
+    "id": "TV3Plus.lv",
+    "group": "🇱🇻 Komerckanāli",
+    "logo": "",
+    "urls": [],
+    "notes": "Commercial TV3 group channel. No verified public direct HLS. Official viewing via Go3/operator; not listed among free Go3 Go channels."
   }
 ]
