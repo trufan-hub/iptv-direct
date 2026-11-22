@@ -8,7 +8,7 @@
     "streams": [
       "https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv1_pasaule/live.livx/playlist.m3u8"
     ],
-    "note": "LSM Pasaule feed; programmes may differ from Latvia terrestrial LTV1"
+    "note": "LSM international (ltv1_pasaule) HLS: valid manifest is not a proof of playable domestic LTV1. Rights-restricted programmes may be replaced by a placeholder; domestic Replay player is separate and must be verified."
   },
   {
     "id": "lv.ltv7",
@@ -19,7 +19,7 @@
     "streams": [
       "https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv7_pasaule/live.livx/playlist.m3u8"
     ],
-    "note": "LSM Pasaule feed; rights-limited programmes may differ"
+    "note": "LSM international (ltv7_pasaule) HLS: the user's Lazy IPTV screenshot on 22.11.2026 shows a geo-rights restriction placeholder, NOT confirmed playable live video. Do not mark this as a playable domestic Latvian broadcast solely on HTTP 200 / #EXTM3U; replace only after actual video validation from Latvia."
   },
   {
     "id": "lv.retv",
