@@ -6,6 +6,7 @@ on:
     paths:
       - 'latvia/candidates.json'
       - 'latvia/probe.py'
+      - 'latvia/epg_probe.py'
       - '.github/workflows/latvia-probe.yml'
 permissions:
   contents: read
@@ -22,3 +23,5 @@ jobs:
           python-version: '3.12'
       - name: Verify Latvian HLS candidates
         run: python latvia/probe.py
+      - name: Inspect LV EPG IDs
+        run: python latvia/epg_probe.py
