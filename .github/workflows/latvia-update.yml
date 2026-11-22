@@ -42,10 +42,7 @@ jobs:
           LV_PROXY_URL: ${{ secrets.LV_PROXY_URL }}
           HTTPS_PROXY: ${{ secrets.LV_PROXY_URL }}
           HTTP_PROXY: ${{ secrets.LV_PROXY_URL }}
-          https_proxy: ${{ secrets.LV_PROXY_URL }}
-          http_proxy: ${{ secrets.LV_PROXY_URL }}
           NO_PROXY: ''
-          no_proxy: ''
         run: |
           python latvia/lv_proxy_probe.py --geo-only --optional
           python latvia/build.py
