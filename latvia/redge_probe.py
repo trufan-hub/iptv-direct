@@ -1,36 +1,48 @@
 #!/usr/bin/env python3
-"""Compare public Latvian and overseas LSM playback API routing; redact token URLs."""
+"""Probe official *domestic* LTV Redge live entries, without exposing signed credentials."""
 import json
-from urllib.parse import urlencode, urlsplit
+from urllib.parse import urlencode,urlsplit,parse_qsl
 from urllib.request import Request,urlopen
 from urllib.error import HTTPError,URLError
 
 BASE="https://telpa.lsm.lv"
-TEST_IPS=[("default",None),("NIC-LV", "194.8.2.2"),("LV-DNS2","212.142.79.6")]
 HEADERS={"User-Agent":"Mozilla/5.0","Accept":"application/json","Referer":"https://replay.lsm.lv/","Origin":"https://replay.lsm.lv"}
-def get(url):
-    with urlopen(Request(url,headers=HEADERS), timeout=20) as r:
-        return json.loads(r.read(40000))
-for ch,asset in (("LTV1","6379352"),("LTV7","6379432")):
-    detail=get(BASE+f"/api/products/lives/{asset}?"+urlencode({"platform":"BROWSER","tenantUid":"LsmP"}))
-    print("CHANNEL",ch,"ASSET_DETAIL_TITLE",detail.get("title"),"WEB_URL",detail.get("webUrl"),"GEO_MANUAL_LOCK",detail.get("geoipManualLock"),"ACTIVE",detail.get("active"),"LOGIN",detail.get("loginRequired"))
-    for name,ip in TEST_IPS:
+
+def query(url):
+    with urlopen(Request(url,headers=HEADERS),timeout=17) as r:
+        obj=json.loads(r.read(100000))
+        return r.status,obj
+
+for name,asset in (("LTV1 DOMESTIC",6379272),("LTV7 DOMESTIC",6379368)):
+    for label,ip in (("standard",None),("lv_public_ip","194.8.2.2")):
         params={"videoType":"LIVE","platform":"BROWSER","tenantUid":"LsmP"}
         if ip:params["ip"]=ip
-        url=BASE+f"/api/products/{asset}/videos/player/configuration?"+urlencode(params)
+        cfg_url=BASE+f"/api/products/{asset}/videos/player/configuration?"+urlencode(params)
         try:
-            config=get(url)
-            print(" CONFIG",ch,name,"keys",list(config.keys()))
+            status,config=query(cfg_url)
+            print("CONFIG",name,label,"HTTP",status,"keys",list(config.keys()))
             playlist_url=config.get("playlist",{}).get("url","") or config.get("playlistUrl","")
             if not playlist_url:
-                print("  NO_PLAYLIST");continue
-            p=get(playlist_url)
-            for fmt,items in p.get("sources",{}).items():
+                print("NO PLAYLIST",name,label);continue
+            st,guide=query(playlist_url)
+            print("PLAYLIST",name,label,"HTTP",st,"sources",list(guide.get("sources",{})))
+            for fmt,items in guide.get("sources",{}).items():
                 for item in items[:3]:
-                    raw=item.get("src","")
-                    parsed=urlsplit(raw)
-                    print("  SOURCE",fmt,"host",parsed.hostname,"path",parsed.path,"query_present",bool(parsed.query))
+                    src=item.get("src","")
+                    p=urlsplit(src)
+                    q=sorted(k for k,v in parse_qsl(p.query,keep_blank_values=True))
+                    print("STREAM",name,label,fmt,"host",p.hostname,"path",p.path,"signed_query",bool(q),"query_keys",q)
+                    if fmt.upper()=="HLS" and p.scheme=="https":
+                        try:
+                            req=Request(src,headers={"User-Agent":"Mozilla/5.0","Referer":"https://replay.lsm.lv/","Accept":"*/*"})
+                            with urlopen(req,timeout=16) as resp:
+                                head=resp.read(256)
+                                print("M3U8_CHECK",name,label,"HTTP",resp.status,"manifest",head.startswith(b"#EXTM3U"),"final_host",urlsplit(resp.geturl()).hostname)
+                        except HTTPError as e:
+                            print("M3U8_CHECK",name,label,"HTTP",e.code)
+                        except (URLError,OSError,ValueError) as e:
+                            print("M3U8_CHECK",name,label,"ERROR",type(e).__name__)
         except HTTPError as e:
-            print(" FAIL",ch,name,"HTTP",e.code,"BODY",e.read(180).decode("utf-8","replace"))
-        except (ValueError,OSError,URLError) as e:
-            print(" FAIL",ch,name,type(e).__name__,str(e)[:160])
+            print("CONFIG_FAIL",name,label,"HTTP",e.code,"body",e.read(140).decode("utf-8","replace"))
+        except (URLError,OSError,ValueError) as e:
+            print("CONFIG_FAIL",name,label,"ERROR",type(e).__name__,str(e)[:140])
