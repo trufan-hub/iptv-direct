@@ -40,6 +40,15 @@ for url in PAGES:
                 val=json.loads('"'+x+'"') if "\\u002F" in x else html.unescape(x)
                 if val not in urls: urls.append(val)
             except (ValueError,json.JSONDecodeError):pass
+        for marker in ("__REPLAY__", "redge", "playback", "source", "embed", "__NUXT_DATA__"):
+            matches=list(re.finditer(re.escape(marker),body,re.I))
+            print("  marker",marker,"count",len(matches))
+            if marker in ("__REPLAY__", "redge", "playback") and matches:
+                for m in matches[:2]:
+                    snippet=body[max(0,m.start()-90):m.start()+190]
+                    snippet=re.sub(r'https?://[^\\s"<>]+',"[url]",snippet)
+                    print("    snippet",snippet[:260].replace("\\n"," "))
+        print("  scripts",sorted(set(re.findall(r'<script[^>]+src=["\\\']([^"\\\']+)',body)))[:10])
         print("  embeds",len(urls))
         for iframe in urls[:3]:
             try:
