@@ -1,0 +1,12 @@
+#EXTM3U url-tvg="https://trufan-hub.github.io/iptv-direct/latvia-guide.xml"
+# TruFan Latvia IPTV; independently updated; official and public HLS
+#EXTINF:-1 tvg-id="lv.ltv1" tvg-name="LTV1" group-title="Latvija" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LTV1_%282022%29.svg/960px-LTV1_%282022%29.svg.png",LTV1
+https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv1_pasaule/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="lv.ltv7" tvg-name="LTV7" group-title="Latvija" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/LTV7_Logo_2021.svg/960px-LTV7_Logo_2021.svg.png",LTV7
+https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv7_pasaule/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="lv.retv" tvg-name="ReTV" group-title="Latvija" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/ReTV_Zals.svg/500px-ReTV_Zals.svg.png",ReTV
+https://retv2132.cloudycdn.services/slive/_definst_/retv_retv_channel_5k7_42787_default_891_hls.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="lv.swh" tvg-name="Radio SWH TV" group-title="Latvija" tvg-logo="https://api-prd.shortcut.lv/api/images/channel/294115254/logo/dark?width=80",Radio SWH TV
+https://00ff00.latnet.media/edge/swh_tv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="lv.vdtv" tvg-name="Vidusdaugavas Televīzija" group-title="Reģionālie" tvg-logo="https://i.imgur.com/L5U3PQR.png",Vidusdaugavas Televīzija
+https://straume.vdtv.lv/vdtv2/index.m3u8
