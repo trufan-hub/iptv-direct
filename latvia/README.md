@@ -65,3 +65,13 @@ The standard GitHub-hosted runner is not located in Latvia. To make **outbound H
 For truly IP-bound streams, playback must originate from an authorised same-IP endpoint or be handled by the official player. Do not publish temporary signed URLs or proxy credentials to GitHub Pages.
 
 This proxy configuration applies only to the Latvia build requests, **not** the entire GitHub checkout/deployment infrastructure, `direct.m3u` or `rutube-auto`.
+
+## Separate domestic LTV stream test (22.11.2026)
+
+**Test playlist for Lazy IPTV:** https://trufan-hub.github.io/iptv-direct/latvia-domestic-test.m3u
+
+The official REplay/Redge catalogue lists domestic LTV1 (ID 6379272) and LTV7 (ID 6379368), distinct from the international Pasaule products (6379352 and 6379432). The domestic HLS paths contain `ltv1_latvija` and `ltv7_latvija` respectively.
+
+The test playlist provides API (full official public HLS address) and DIRECT (same path without rendition selectors) variants for each channel. CDN requests from GitHub returned HTTP 401 Unauthorized, with or without a public LV DNS IPv4 supplied as the API `ip` parameter. This is **not verified working TV video**. Actual Latvian device playback still requires a test; geo-vs-auth cause is not confirmed.
+
+Test-only file is regenerated alongside the scheduled Latvia build when possible. Production latvia.m3u, EPG and the two Rutube playlists are unchanged. Do not promote a variant unless playback really works in Latvia. No paid proxy or always-on user hardware is used.
