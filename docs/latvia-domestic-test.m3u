@@ -1,0 +1,11 @@
+#EXTM3U
+# TruFan Latvia domestic LTV test; NOT validated for actual playback
+# Experimental official streams. Production latvia.m3u is unchanged.
+#EXTINF:-1 tvg-id="lv.test.ltv1_latvija.api" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LTV1_%282022%29.svg/960px-LTV1_%282022%29.svg.png" group-title="LTV pārbaude",LTV1 LATVIJA API
+https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv1_latvija/live.livx/playlist.m3u8?renditions
+#EXTINF:-1 tvg-id="lv.test.ltv1_latvija.direct" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LTV1_%282022%29.svg/960px-LTV1_%282022%29.svg.png" group-title="LTV pārbaude",LTV1 LATVIJA DIRECT
+https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv1_latvija/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="lv.test.ltv7_latvija.api" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/LTV7_Logo_2021.svg/960px-LTV7_Logo_2021.svg.png" group-title="LTV pārbaude",LTV7 LATVIJA API
+https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv7_latvija/live.livx/playlist.m3u8?renditions
+#EXTINF:-1 tvg-id="lv.test.ltv7_latvija.direct" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/LTV7_Logo_2021.svg/960px-LTV7_Logo_2021.svg.png" group-title="LTV pārbaude",LTV7 LATVIJA DIRECT
+https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv7_latvija/live.livx/playlist.m3u8
