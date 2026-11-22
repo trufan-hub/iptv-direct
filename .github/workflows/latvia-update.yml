@@ -1,0 +1,62 @@
+name: Update TruFan Latvia IPTV
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 */6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'latvia/build.py'
+      - 'latvia/check_release.py'
+      - 'latvia/channels.json'
+      - '.github/workflows/latvia-update.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: trufan-latvia-pages
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile generator and validator
+        run: python -m py_compile latvia/build.py latvia/check_release.py
+      - name: Update Latvian streams, EPG and logos
+        run: python latvia/build.py
+      - name: Validate Latvian playlist release
+        run: python latvia/check_release.py
+      - name: Commit updated Latvia files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/latvia.m3u docs/latvia-guide.xml docs/latvia-guide.xml.gz docs/latvia-logos.json docs/latvia-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update TruFan Latvia streams and EPG'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
