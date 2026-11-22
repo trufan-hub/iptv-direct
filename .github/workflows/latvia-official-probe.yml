@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'latvia/official_probe.py'
+      - 'latvia/nuxt_probe.py'
       - '.github/workflows/latvia-official-probe.yml'
 permissions:
   contents: read
@@ -21,3 +22,4 @@ jobs:
         run: |
           python -m py_compile latvia/official_probe.py
           python -u latvia/official_probe.py
+          python -u latvia/nuxt_probe.py
