@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-11-21T20:14:24.071807+00:00",
+  "updated_at": "2026-11-22T01:32:17.154557+00:00",
   "catalog_channels": 169,
   "guide_channels": 101,
-  "programmes": 12916,
+  "programmes": 8763,
   "provider_logo_count": 101,
   "cached_logo_count": 101,
   "logo_registry_count": 101,
   "logos_added_to_m3u": {
     "docs/direct.m3u": 101,
-    "docs/verified.m3u": 97
+    "docs/verified.m3u": 96
   },
-  "compressed_bytes": 191012,
-  "uncompressed_bytes": 2493988,
+  "compressed_bytes": 140115,
+  "uncompressed_bytes": 1702524,
   "feeds": {
     "IPTVX": {
       "url": "https://iptvx.one/EPG",

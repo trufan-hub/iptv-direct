@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-21T20:14:23.989567+00:00",
+  "generated_utc": "2026-11-22T01:32:17.038777+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 164,
-  "unverified": 5,
-  "api_updated": 109,
-  "previous_used": 60,
+  "verified": 162,
+  "unverified": 7,
+  "api_updated": 110,
+  "previous_used": 59,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -196,9 +196,9 @@
       "name": "Дорамы",
       "rutube_id": "5e3edd063411550ed6b67a8c0d7c96ea",
       "status": "verified",
-      "api_status": "http_404",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Индийские фильмы",
@@ -211,9 +211,9 @@
     {
       "name": "Турецкие фильмы",
       "rutube_id": "2814e12b4ef6c528967736441c2e2803",
-      "status": "verified",
+      "status": "candidate_unverified",
       "api_status": "http_404",
-      "probe": "manifest_ok",
+      "probe": "unverified:HTTPError",
       "source": "previous"
     },
     {
@@ -907,10 +907,10 @@
     {
       "name": "360",
       "rutube_id": "07beff61e617797db550cc3a5f6ad92b",
-      "status": "verified",
-      "api_status": "resolved",
-      "probe": "manifest_ok",
-      "source": "rutube_api"
+      "status": "candidate_unverified",
+      "api_status": "url_unverified:unverified:HTTPError",
+      "probe": "unverified:HTTPError",
+      "source": "previous"
     },
     {
       "name": "Прима",
@@ -1036,9 +1036,9 @@
       "name": "Музыкальные клипы",
       "rutube_id": "e7e04192431a24a750fd8704fa221461",
       "status": "verified",
-      "api_status": "http_404",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Смотри Радио",
