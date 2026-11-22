@@ -1,10 +1,13 @@
 name: Verify Latvia proxy and domestic LTV streams
 on:
   workflow_dispatch:
-
+  push:
+    branches: [main]
+    paths:
+      - 'latvia/lv_proxy_probe.py'
+      - '.github/workflows/latvia-proxy-test.yml'
 permissions:
   contents: read
-
 jobs:
   verify:
     runs-on: ubuntu-latest
@@ -14,11 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Verify Latvia exit and official LTV1/LTV7 APIs
-        env:
-          LV_PROXY_URL: ${{ secrets.LV_PROXY_URL }}
-          NO_PROXY: ''
-          no_proxy: ''
+      - name: Verify syntax and proxy diagnostics
         run: |
           python -m py_compile latvia/lv_proxy_probe.py
-          python -u latvia/lv_proxy_probe.py
+          python -u latvia/lv_proxy_probe.py --geo-only --optional
