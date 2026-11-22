@@ -46,3 +46,22 @@ The playlist has one `url-tvg` header pointing only to its own `latvia-guide.xml
 - **Go3 Go free ad-supported TV package**: https://palidziba.go3.lv/article/kas-ir-go3-go-lv/ . Official list includes LTV1, LTV7, ReTV, SWH TV, TV3, TV6, TV24, TV4, EWTN Latvia and other local channels (subject to account eligibility); separate Go3 app, **not** exported IPTV streams; 3+ is NOT listed.
 - **Free terrestrial DVB-T**: https://www.neplp.lv/lv/bezmaksas-programmas . Full domestic LTV1/LTV7 in SD and HD and several other channels, with antenna + DVB-T receiver. For local private LAN M3U, a supported tuner connected to Tvheadend can expose `http://[LOCAL_SERVER]:9981/playlist/channels.m3u` and `http://[LOCAL_SERVER]:9981/xmltv/channels`. This requires an always-on local server and hardware, and is not a public GitHub stream.
 - Old `ltvlive3167.bstrm.net` CDN entries are currently unreachable in upstream HLS checks. The new REplay player uses Redge; no persistent license-free direct domestic HLS has been confirmed yet. **Never replace the playlist with untested candidate streams or confuse HTTP 200 with video.**
+
+
+## Latvian proxy for GitHub Actions (optional until configured)
+
+The standard GitHub-hosted runner is not located in Latvia. To make **outbound HTTP(S) requests of the Latvian IPTV builder** exit via Latvia, supply your own private **HTTP CONNECT proxy with an LV public IP**.
+
+**One-time private setup (do not paste the password into this repository or an issue):**
+
+1. Obtain a legitimate, stable Latvia-based HTTP CONNECT proxy. Avoid shared free proxy lists, which can expose requests and credentials.
+2. In GitHub open `trufan-hub/iptv-direct` → Settings → Secrets and variables → Actions → New repository secret.
+3. Name the secret exactly `LV_PROXY_URL`. Its value is a proxy address, for example `http://USERNAME:PASSWORD@LV_HOST:PORT`; substitute your actual credentials. URL-encode reserved characters in username and password.
+4. Go to Actions → **Verify Latvia proxy and domestic LTV streams** → Run workflow. The script checks the proxy's observed egress country is `LV`, then requests the official LTV1/LTV7 playback API **through this proxy**. No credentials, full stream URLs or signed CDN tokens are printed.
+5. Once configured, the existing **Update TruFan Latvia IPTV** workflow supplies `HTTPS_PROXY` and `HTTP_PROXY` only to its Latvia build step. The build first validates Latvian proxy egress and **fails closed** if the configured proxy is blocked or resolves to a non-LV country. Without the secret, the pre-existing direct workflow continues unchanged.
+
+**This is not a streaming relay:** GitHub Pages still serves a static M3U which the TV opens directly; it does **not** pass TV video traffic through the Latvian proxy. The official Redge configuration may bind CDN access to the *proxy's IP*, whereas the TV uses its own IP, so a tokenised URL that works on GitHub might fail on the TV. Likewise the official API may still return the `*_pasaule` placeholder feed. Neither an HTTP 200 nor a `#EXTM3U` response guarantees playable domestic video. The separate proxy probe must show a domestic candidate before any LTV channel source is changed, followed by real playback verification on a device in Latvia.
+
+For truly IP-bound streams, playback must originate from an authorised same-IP endpoint or be handled by the official player. Do not publish temporary signed URLs or proxy credentials to GitHub Pages.
+
+This proxy configuration applies only to the Latvia build requests, **not** the entire GitHub checkout/deployment infrastructure, `direct.m3u` or `rutube-auto`.
