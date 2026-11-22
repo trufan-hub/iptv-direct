@@ -39,7 +39,8 @@ for name,asset in (("LTV1 DOMESTIC",6379272),("LTV7 DOMESTIC",6379368)):
                                 head=resp.read(256)
                                 print("M3U8_CHECK",name,label,"HTTP",resp.status,"manifest",head.startswith(b"#EXTM3U"),"final_host",urlsplit(resp.geturl()).hostname)
                         except HTTPError as e:
-                            print("M3U8_CHECK",name,label,"HTTP",e.code)
+                            brief=e.read(350).decode("utf-8","replace").replace("\n"," ")[:240]
+                            print("M3U8_CHECK",name,label,"HTTP",e.code,"message",brief,"auth_header_present",bool(e.headers.get("WWW-Authenticate")))
                         except (URLError,OSError,ValueError) as e:
                             print("M3U8_CHECK",name,label,"ERROR",type(e).__name__)
         except HTTPError as e:
