@@ -1,0 +1,23 @@
+name: Inspect official LTV stream sources
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'latvia/official_probe.py'
+      - '.github/workflows/latvia-official-probe.yml'
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile and inspect public official LTV URLs
+        run: |
+          python -m py_compile latvia/official_probe.py
+          python -u latvia/official_probe.py
