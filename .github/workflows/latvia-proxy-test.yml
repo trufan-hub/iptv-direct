@@ -1,11 +1,6 @@
 name: Verify Latvia proxy and domestic LTV streams
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'latvia/lv_proxy_probe.py'
-      - '.github/workflows/latvia-proxy-test.yml'
 permissions:
   contents: read
 jobs:
@@ -22,4 +17,4 @@ jobs:
           LV_PROXY_URL: ${{ secrets.LV_PROXY_URL }}
         run: |
           python -m py_compile latvia/lv_proxy_probe.py
-          python -u latvia/lv_proxy_probe.py --geo-only --optional
+          python -u latvia/lv_proxy_probe.py
