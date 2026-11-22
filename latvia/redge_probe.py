@@ -1,27 +1,17 @@
 #!/usr/bin/env python3
-"""Look for provider API origin and public playback mechanism in LSM JS (read only)."""
-from collections import Counter
+"""Review public REplay Redge player URL assembly; never print signed tokens."""
 import re
 from urllib.parse import urlsplit
 from urllib.request import Request,urlopen
-base="https://telpa.lsm.lv/player/redge-media-player/0.17.0/"
-for name in ("lsm-player.min.js","lsm-player.js"):
-    try:
-        req=Request(base+name,headers={"User-Agent":"Mozilla/5.0","Referer":"https://replay.lsm.lv/"})
-        with urlopen(req,timeout=35) as rsp: src=rsp.read(6_000_000).decode("utf-8","replace")
-        print("SCRIPT",name,len(src))
-        hosts=Counter()
-        for full in re.findall(r"https?:(?:\\?/){2}[^\s\"'<>\\]{2,180}",src):
-            host=urlsplit(full.replace("\\/","/")).hostname
-            if host:hosts[host]+=1
-        print("HOSTS",hosts.most_common(60))
-        for term in ("assetId","sourceUrl","appId","loadAsset","getAsset","getMedia","mediaUrl","m3u8","redge.media","contentUrl","streamingUrl","manifestUrl","serviceUrl"):
-            spots=[m.start() for m in re.finditer(re.escape(term),src,re.I)]
-            print("TOKEN",term,len(spots))
-            if term in ("assetId","sourceUrl","appId","loadAsset","getAsset","getMedia","mediaUrl","redge.media","contentUrl","streamingUrl","manifestUrl","serviceUrl"):
-                for p in (spots[-6:] if len(spots)>6 else spots):
-                    nearby=src[max(0,p-240):p+350].replace("\n"," ")
-                    nearby=re.sub(r'https?://[^\s"<>]+',lambda m:"[HOST:"+str(urlsplit(m.group()).hostname)+"]",nearby)
-                    print("CONTEXT",nearby[:590])
-        print("LAST",src[-3200:].replace("\n"," "))
-    except Exception as e:print("ERROR",name,type(e).__name__,str(e)[:190])
+url="https://telpa.lsm.lv/player/redge-media-player/0.17.0/lsm-player.js"
+with urlopen(Request(url,headers={"User-Agent":"Mozilla/5.0","Referer":"https://replay.lsm.lv/"}),timeout=35) as r:
+    src=r.read(5_000_000).decode("utf-8","replace")
+print("SIZE",len(src))
+for name in ("getAssetDetail","getPlayerConfiguration","getPlaylist","wrapper_init","getPlayerConfig","assetDetail","cdnToken","TENANT_UID_BY_APP_ID","ENDPOINT","API_URL","lsm.lv/api"):
+    spot=[m.start() for m in re.finditer(re.escape(name),src)]
+    print("TERM",name,"count",len(spot))
+    defs=[p for p in spot if any(x in src[max(0,p-120):p] for x in ["function ","const ","var ","function* ","function "])]
+    for p in (defs[:4] if defs else spot[:2]):
+        snippet=src[max(0,p-220):p+3700].replace("\n"," ")
+        snippet=re.sub(r'https?://[\w./?=&;%+-]+',lambda m:"["+str(urlsplit(m.group()).hostname)+urlsplit(m.group()).path[:100]+"]",snippet)
+        print("CODE",snippet[:3800])
