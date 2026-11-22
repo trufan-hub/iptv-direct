@@ -55,6 +55,24 @@ for channel in ("ltv1","ltv7"):
                 value=json.loads(value)
             except (ValueError,TypeError):
                 pass
+            if sym == source.group(2) and isinstance(value,str) and value.startswith("https://ltv.lsm.lv/embed/live"):
+                embed_request=urllib.request.Request(
+                    value,headers={"User-Agent":"Mozilla/5.0",
+                                   "Referer":url,"Accept":"text/html,*/*"}
+                )
+                try:
+                    with urllib.request.urlopen(embed_request,timeout=18) as resp:
+                        body=resp.read(400000).decode("utf-8","replace")
+                        print("  EMBED HTTP",resp.status,"length",len(body))
+                    for marker in ("ltvEmbedPayload","embed-data","redge","cloudycdn","item_id","m3u8","<live"):
+                        print("    MARK",marker,body.find(marker))
+                    for match in re.finditer(r'(?:(?:ltvEmbedPayload)|(?:embed-data)|(?:redge)|(?:item_id))',body):
+                        snippet=body[max(0,match.start()-70):match.end()+180]
+                        snippet=re.sub(r'https?://[^\\s"<>]+',"[url]",snippet)
+                        print("    NEAR",snippet[:250].replace("\\n"," "))
+                        if match.start()>300000:break
+                except Exception as ex:
+                    print("  EMBED FAILED",type(ex).__name__,str(ex)[:100])
             if isinstance(value,str) and value.startswith("http"):
                 p=urlsplit(value)
                 value={"scheme":p.scheme,"host":p.hostname,"path":p.path[:120],"query_present":bool(p.query)}
