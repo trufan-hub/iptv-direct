@@ -1,32 +1,27 @@
 #!/usr/bin/env python3
-"""Inspect public Redge LSM player JS endpoint patterns, without requesting keys."""
-import json
+"""Look for provider API origin and public playback mechanism in LSM JS (read only)."""
+from collections import Counter
 import re
-import urllib.request
 from urllib.parse import urlsplit
-PAGES=[
-"https://telpa.lsm.lv/player/redge-media-player/0.17.0/index.html?assetId=6379432&appId=lsm",
-"https://telpa.lsm.lv/player/redge-media-player/0.17.0/lsm-player.js"
-]
-for url in PAGES:
-  try:
-    req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0","Referer":"https://replay.lsm.lv/"})
-    with urllib.request.urlopen(req,timeout=22) as r:
-      data=r.read(2_000_000).decode("utf-8","replace")
-      print("URL",urlsplit(url).path,"HTTP",r.status,"SIZE",len(data))
-    if url.endswith(".js"):
-      tokens=["api.","redge.media","assetId","drm","license","\\.m3u8","streamUrl","asset_id","manifest","playbackUrl","/api/","apiUrl","keySystems","widevine","sourceUrl"]
-      for token in tokens:
-        hits=list(re.finditer(token,data,re.I))
-        print("  TOKEN",token,len(hits))
-        for hit in hits[:4]:
-          context=data[max(0,hit.start()-95):hit.end()+160]
-          context=context.replace("\\n"," ")
-          context=re.sub(r'https?://[a-zA-Z0-9./:?=_%-]+',lambda m: "HOST:"+str(urlsplit(m.group()).hostname),context)
-          print("    ",context[:280])
-      urls=set(re.findall(r'https?:\\?/\\?/[^"' + "'" + r'\s\`\}\);,]{5,190}',data))
-      print("  URL_HOSTS",list(sorted({urlsplit(u.replace("\\/","/")).hostname for u in urls if urlsplit(u.replace("\\/","/")).hostname}))[:45])
-    else:
-      scripts=re.findall(r'<script[^>]+src=["' + "'" + r']([^"' + "'" + r']+)',data)
-      print("  JS SCRIPTS",scripts[:15])
-  except Exception as e:print("ERROR",str(e)[:250])
+from urllib.request import Request,urlopen
+base="https://telpa.lsm.lv/player/redge-media-player/0.17.0/"
+for name in ("lsm-player.min.js","lsm-player.js"):
+    try:
+        req=Request(base+name,headers={"User-Agent":"Mozilla/5.0","Referer":"https://replay.lsm.lv/"})
+        with urlopen(req,timeout=35) as rsp: src=rsp.read(6_000_000).decode("utf-8","replace")
+        print("SCRIPT",name,len(src))
+        hosts=Counter()
+        for full in re.findall(r"https?:(?:\\?/){2}[^\s\"'<>\\]{2,180}",src):
+            host=urlsplit(full.replace("\\/","/")).hostname
+            if host:hosts[host]+=1
+        print("HOSTS",hosts.most_common(60))
+        for term in ("assetId","sourceUrl","appId","loadAsset","getAsset","getMedia","mediaUrl","m3u8","redge.media","contentUrl","streamingUrl","manifestUrl","serviceUrl"):
+            spots=[m.start() for m in re.finditer(re.escape(term),src,re.I)]
+            print("TOKEN",term,len(spots))
+            if term in ("assetId","sourceUrl","appId","loadAsset","getAsset","getMedia","mediaUrl","redge.media","contentUrl","streamingUrl","manifestUrl","serviceUrl"):
+                for p in (spots[-6:] if len(spots)>6 else spots):
+                    nearby=src[max(0,p-240):p+350].replace("\n"," ")
+                    nearby=re.sub(r'https?://[^\s"<>]+',lambda m:"[HOST:"+str(urlsplit(m.group()).hostname)+"]",nearby)
+                    print("CONTEXT",nearby[:590])
+        print("LAST",src[-3200:].replace("\n"," "))
+    except Exception as e:print("ERROR",name,type(e).__name__,str(e)[:190])
