@@ -1,35 +1,36 @@
 #!/usr/bin/env python3
-"""Check official public LSM LIVE playlist response; redact CDN auth tokens."""
+"""Compare public Latvian and overseas LSM playback API routing; redact token URLs."""
 import json
-from urllib.parse import urlencode,urlsplit,parse_qsl
+from urllib.parse import urlencode, urlsplit
 from urllib.request import Request,urlopen
 from urllib.error import HTTPError,URLError
+
 BASE="https://telpa.lsm.lv"
-for name,asset in (("LTV1","6379352"),("LTV7","6379432")):
-    url=BASE+f"/api/products/{asset}/videos/playlist?"+urlencode({"videoType":"LIVE","platform":"BROWSER","tenantUid":"LsmP"})
-    req=Request(url,headers={"User-Agent":"Mozilla/5.0","Accept":"application/json","Referer":"https://replay.lsm.lv/","Origin":"https://replay.lsm.lv"})
-    try:
-        with urlopen(req,timeout=16) as resp:
-            raw=resp.read(250000)
-            print(name,"HTTP",resp.status,"CONTENT_TYPE",resp.headers.get("Content-Type"),"LEN",len(raw))
-        data=json.loads(raw)
-        def scan(value,path="ROOT",depth=0):
-            if depth>6:return
-            if isinstance(value,dict):
-                print("KEYS",path,list(value.keys())[:25])
-                for k,v in value.items():
-                    if k in ("drm","contentProtection","drmConfiguration","encrypted","sources","media","formats"):
-                        print("  TYPE",path+"."+k,type(v).__name__)
-                    scan(v,path+"."+k,depth+1)
-            elif isinstance(value,list):
-                print("COUNT",path,len(value))
-                for v in value[:2]:scan(v,path+"[]",depth+1)
-            elif isinstance(value,str) and value.startswith("http"):
-                parsed=urlsplit(value)
-                print("URL",path,parsed.hostname,parsed.path[:160],"QUERY_KEYS",[k for k,v in parse_qsl(parsed.query)][:12])
-            elif isinstance(value,(str,int,bool)) and path.endswith((".format",".type",".protocol",".encrypted",".drm")):
-                print("VALUE",path,str(value)[:110])
-        scan(data)
-    except HTTPError as e:
-        print(name,"HTTP",e.code,"BODY",e.read(220).decode("utf-8","replace")[:120])
-    except (ValueError,OSError,URLError) as e:print(name,"ERROR",type(e).__name__,str(e)[:130])
+TEST_IPS=[("default",None),("NIC-LV", "194.8.2.2"),("LV-DNS2","212.142.79.6")]
+HEADERS={"User-Agent":"Mozilla/5.0","Accept":"application/json","Referer":"https://replay.lsm.lv/","Origin":"https://replay.lsm.lv"}
+def get(url):
+    with urlopen(Request(url,headers=HEADERS), timeout=20) as r:
+        return json.loads(r.read(40000))
+for ch,asset in (("LTV1","6379352"),("LTV7","6379432")):
+    detail=get(BASE+f"/api/products/lives/{asset}?"+urlencode({"platform":"BROWSER","tenantUid":"LsmP"}))
+    print("CHANNEL",ch,"ASSET_DETAIL_TITLE",detail.get("title"),"WEB_URL",detail.get("webUrl"),"GEO_MANUAL_LOCK",detail.get("geoipManualLock"),"ACTIVE",detail.get("active"),"LOGIN",detail.get("loginRequired"))
+    for name,ip in TEST_IPS:
+        params={"videoType":"LIVE","platform":"BROWSER","tenantUid":"LsmP"}
+        if ip:params["ip"]=ip
+        url=BASE+f"/api/products/{asset}/videos/player/configuration?"+urlencode(params)
+        try:
+            config=get(url)
+            print(" CONFIG",ch,name,"keys",list(config.keys()))
+            playlist_url=config.get("playlist",{}).get("url","") or config.get("playlistUrl","")
+            if not playlist_url:
+                print("  NO_PLAYLIST");continue
+            p=get(playlist_url)
+            for fmt,items in p.get("sources",{}).items():
+                for item in items[:3]:
+                    raw=item.get("src","")
+                    parsed=urlsplit(raw)
+                    print("  SOURCE",fmt,"host",parsed.hostname,"path",parsed.path,"query_present",bool(parsed.query))
+        except HTTPError as e:
+            print(" FAIL",ch,name,"HTTP",e.code,"BODY",e.read(180).decode("utf-8","replace"))
+        except (ValueError,OSError,URLError) as e:
+            print(" FAIL",ch,name,type(e).__name__,str(e)[:160])
