@@ -1,0 +1,23 @@
+name: Find domestic LTV public channel identifiers
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'latvia/find_domestic.py'
+      - '.github/workflows/latvia-find-domestic.yml'
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Query public channel catalogue
+        run: |
+          python -m py_compile latvia/find_domestic.py
+          python -u latvia/find_domestic.py
