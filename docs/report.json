@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-11-22T07:34:22.953773+00:00",
+  "generated_utc": "2026-11-22T10:49:19.306426+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 164,
-  "unverified": 5,
+  "verified": 163,
+  "unverified": 6,
   "api_updated": 110,
   "previous_used": 59,
   "bootstrap_used": 0,
@@ -196,9 +196,9 @@
       "name": "Дорамы",
       "rutube_id": "5e3edd063411550ed6b67a8c0d7c96ea",
       "status": "verified",
-      "api_status": "resolved",
+      "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "rutube_api"
+      "source": "previous"
     },
     {
       "name": "Индийские фильмы",
@@ -1036,9 +1036,9 @@
       "name": "Музыкальные клипы",
       "rutube_id": "e7e04192431a24a750fd8704fa221461",
       "status": "verified",
-      "api_status": "http_404",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Смотри Радио",
@@ -1339,9 +1339,9 @@
     {
       "name": "beIN SPORTS XTRA Español",
       "rutube_id": "05550e441b09aeec53e60de66b6c47bf",
-      "status": "verified",
+      "status": "candidate_unverified",
       "api_status": "http_404",
-      "probe": "manifest_ok",
+      "probe": "unverified:HTTPError",
       "source": "previous"
     },
     {
