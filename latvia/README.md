@@ -19,7 +19,7 @@ https://trufan-hub.github.io/iptv-direct/latvia-report.json
 - Radio SWH TV — confirmed HLS
 - Vidusdaugavas Televīzija — confirmed HLS
 
-All five returned HTTP 200 and valid HLS manifests on the GitHub server during the initial test (22.11.2026). This does not confirm playback from a specific Latvian television set.
+All five returned HTTP 200 and valid HLS manifests on the GitHub server during the initial test (22.11.2026). **This confirms neither actual video nor geo-access. The user directly confirmed on 22.11.2026 that LTV7 `ltv7_pasaule` played a GEO-RESTRICTION SLATE, not the real television programme.** The official REplay.lv LTV7 stream did play correctly on the same user's phone in Latvia.
 
 The EPG is generated from a Latvia-scoped XMLTV source and contains verified schedules for **four** channels. ReTV EPG remains unavailable in the inspected feed; the script does not invent schedule entries. Existing titles, descriptions, subtitles and genres are retained when provided.
 
@@ -39,3 +39,10 @@ The workflow `.github/workflows/latvia-update.yml` independently checks HLS sour
 The playlist has one `url-tvg` header pointing only to its own `latvia-guide.xml`. Each channel has a stable `tvg-id`. No external EPG is required in the television's player settings. If a feed or key validation fails, the workflow stops before publishing, retaining the previous working site.
 
 **Rights:** the M3U links directly to provider HLS endpoints; it does not host video. The XMLTV data comes from a public third-party EPG service. Public availability does not by itself establish redistribution rights; review source terms before broader redistribution or commercial use. Commercial channels such as 3+, TV3 and TV6 are not included without authorised public streams.
+
+## Confirmed domestic alternatives (22.11.2026)
+
+- **Official REplay.lv**: https://replay.lsm.lv/lv/skaties/tiesraide/ltv7 and https://replay.lsm.lv/lv/skaties/tiesraide/ltv1 . User confirmed domestic LTV7 works in their phone browser. Official FAQ states Smart TV playback is through browser, not a native app: https://replay.lsm.lv/lv/skaties/buj . This is an HTML player, **not** a direct M3U.
+- **Go3 Go free ad-supported TV package**: https://palidziba.go3.lv/article/kas-ir-go3-go-lv/ . Official list includes LTV1, LTV7, ReTV, SWH TV, TV3, TV6, TV24, TV4, EWTN Latvia and other local channels (subject to account eligibility); separate Go3 app, **not** exported IPTV streams; 3+ is NOT listed.
+- **Free terrestrial DVB-T**: https://www.neplp.lv/lv/bezmaksas-programmas . Full domestic LTV1/LTV7 in SD and HD and several other channels, with antenna + DVB-T receiver. For local private LAN M3U, a supported tuner connected to Tvheadend can expose `http://[LOCAL_SERVER]:9981/playlist/channels.m3u` and `http://[LOCAL_SERVER]:9981/xmltv/channels`. This requires an always-on local server and hardware, and is not a public GitHub stream.
+- Old `ltvlive3167.bstrm.net` CDN entries are currently unreachable in upstream HLS checks. The new REplay player uses Redge; no persistent license-free direct domestic HLS has been confirmed yet. **Never replace the playlist with untested candidate streams or confuse HTTP 200 with video.**
