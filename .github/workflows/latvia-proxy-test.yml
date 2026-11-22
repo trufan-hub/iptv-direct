@@ -18,6 +18,8 @@ jobs:
         with:
           python-version: '3.12'
       - name: Verify syntax and proxy diagnostics
+        env:
+          LV_PROXY_URL: ${{ secrets.LV_PROXY_URL }}
         run: |
           python -m py_compile latvia/lv_proxy_probe.py
           python -u latvia/lv_proxy_probe.py --geo-only --optional
