@@ -7,6 +7,7 @@ on:
     branches: [main]
     paths:
       - 'latvia/build.py'
+      - 'latvia/build_domestic_test.py'
       - 'latvia/check_release.py'
       - 'latvia/channels.json'
       - 'latvia/lv_proxy_probe.py'
@@ -36,7 +37,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Compile generator and validator
-        run: python -m py_compile latvia/build.py latvia/check_release.py latvia/lv_proxy_probe.py
+        run: python -m py_compile latvia/build.py latvia/check_release.py latvia/lv_proxy_probe.py latvia/build_domestic_test.py
       - name: Update Latvian streams, EPG and logos
         env:
           LV_PROXY_URL: ${{ secrets.LV_PROXY_URL }}
@@ -48,11 +49,15 @@ jobs:
           python latvia/build.py
       - name: Validate Latvian playlist release
         run: python latvia/check_release.py
+      - name: Prepare separate domestic LTV test playlist
+        continue-on-error: true
+        run: python latvia/build_domestic_test.py
       - name: Commit updated Latvia files
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add docs/latvia.m3u docs/latvia-guide.xml docs/latvia-guide.xml.gz docs/latvia-logos.json docs/latvia-report.json
+          if [ -f docs/latvia-domestic-test.m3u ]; then git add docs/latvia-domestic-test.m3u; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Update TruFan Latvia streams and EPG'
             git fetch origin main
