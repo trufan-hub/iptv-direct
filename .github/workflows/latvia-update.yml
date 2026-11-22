@@ -9,6 +9,7 @@ on:
       - 'latvia/build.py'
       - 'latvia/check_release.py'
       - 'latvia/channels.json'
+      - 'latvia/lv_proxy_probe.py'
       - '.github/workflows/latvia-update.yml'
 
 permissions:
@@ -35,9 +36,19 @@ jobs:
         with:
           python-version: '3.12'
       - name: Compile generator and validator
-        run: python -m py_compile latvia/build.py latvia/check_release.py
+        run: python -m py_compile latvia/build.py latvia/check_release.py latvia/lv_proxy_probe.py
       - name: Update Latvian streams, EPG and logos
-        run: python latvia/build.py
+        env:
+          LV_PROXY_URL: ${{ secrets.LV_PROXY_URL }}
+          HTTPS_PROXY: ${{ secrets.LV_PROXY_URL }}
+          HTTP_PROXY: ${{ secrets.LV_PROXY_URL }}
+          https_proxy: ${{ secrets.LV_PROXY_URL }}
+          http_proxy: ${{ secrets.LV_PROXY_URL }}
+          NO_PROXY: ''
+          no_proxy: ''
+        run: |
+          python latvia/lv_proxy_probe.py --geo-only --optional
+          python latvia/build.py
       - name: Validate Latvian playlist release
         run: python latvia/check_release.py
       - name: Commit updated Latvia files
