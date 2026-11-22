@@ -103,5 +103,35 @@
     "logo": "",
     "urls": [],
     "notes": "Commercial TV3 group channel. No verified public direct HLS. Official viewing via Go3/operator; not listed among free Go3 Go channels."
+  },
+  {
+    "name": "LTV7 — mcquack mirror (unverified)",
+    "id": "test.ltv7.mcquack",
+    "group": "Pārbaude",
+    "logo": "",
+    "urls": [
+      "http://stream.mcquack.net/371/index.m3u8"
+    ],
+    "notes": "Unverified third-party restream. Do not publish without confirming origin and actual programme"
+  },
+  {
+    "name": "LTV1 — mcquack mirror (unverified)",
+    "id": "test.ltv1.mcquack",
+    "group": "Pārbaude",
+    "logo": "",
+    "urls": [
+      "http://stream.mcquack.net/34/index.m3u8"
+    ],
+    "notes": "Unverified third-party restream"
+  },
+  {
+    "name": "LTV7 — older DVB proxy (unverified)",
+    "id": "test.ltv7.gpsystems",
+    "group": "Pārbaude",
+    "logo": "",
+    "urls": [
+      "http://dvb.gpsystems.lv:4242/bynumber/3"
+    ],
+    "notes": "Old third-party DVB proxy from historical directories; HTTP TS stream may not be HLS"
   }
 ]
