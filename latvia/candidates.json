@@ -1,0 +1,99 @@
+[
+  {
+    "name": "LTV1",
+    "id": "LTV1.lv",
+    "group": "🇱🇻 Latvija",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LTV1_%282022%29.svg/960px-LTV1_%282022%29.svg.png",
+    "urls": [
+      "https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv1_pasaule/live.livx/playlist.m3u8",
+      "https://ltvlive3167.bstrm.net/ltvlive/_definst_/ltvlive_ltv06_ltv1_g_x44_43186_default_1326_hls.smil/chunklist.m3u8"
+    ],
+    "notes": "Первый источник — LSM pasaule, может показывать не все фильмы и передачи"
+  },
+  {
+    "name": "LTV7",
+    "id": "LTV7.lv",
+    "group": "🇱🇻 Latvija",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/LTV7_Logo_2021.svg/960px-LTV7_Logo_2021.svg.png",
+    "urls": [
+      "https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv7_pasaule/live.livx/playlist.m3u8",
+      "https://ltvlive3167.bstrm.net/ltvlive/_definst_/ltvlive_ltv07_ltv7_g_eb0_43187_default_1327_hls.smil/chunklist.m3u8"
+    ]
+  },
+  {
+    "name": "ReTV",
+    "id": "ReTV.lv",
+    "group": "🇱🇻 Latvija",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/ReTV_Zals.svg/500px-ReTV_Zals.svg.png",
+    "urls": [
+      "https://retv2132.cloudycdn.services/slive/_definst_/retv_retv_channel_5k7_42787_default_891_hls.smil/playlist.m3u8",
+      "https://retv2132.bstrm.net/slive/_definst_/retv_retv_channel_5k7_42787_default_891_hls.smil/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Radio SWH TV",
+    "id": "RadioSWHTV.lv",
+    "group": "🇱🇻 Latvija",
+    "logo": "",
+    "urls": [
+      "https://00ff00.latnet.media/edge/swh_tv.smil/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "TV Jūrmala",
+    "id": "TVJurmala.lv",
+    "group": "🇱🇻 Reģionālie",
+    "logo": "https://i.imgur.com/tQHkHD0.png",
+    "urls": [
+      "https://air.star.lv/TV_Jurmala_multistream/index.m3u8"
+    ]
+  },
+  {
+    "name": "Vidusdaugavas Televīzija",
+    "id": "VidusdaugavasTelevizija.lv",
+    "group": "🇱🇻 Reģionālie",
+    "logo": "https://i.imgur.com/L5U3PQR.png",
+    "urls": [
+      "https://straume.vdtv.lv/vdtv2/index.m3u8"
+    ]
+  },
+  {
+    "name": "TVNET",
+    "id": "TVNET.lv",
+    "group": "🇱🇻 Ziņas",
+    "logo": "https://i.imgur.com/jzv1ssE.png",
+    "urls": [
+      "https://player.tvnet.lv/stream/amlst:61659/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Chaula TV",
+    "id": "ChaulaTV.lv",
+    "group": "🇱🇻 Mūzika",
+    "logo": "",
+    "urls": [
+      "https://video.chaula.tv/hls/live/high/playlist_high.m3u8",
+      "https://video.chaula.tv/hls/live/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Movify Kino",
+    "id": "MovifyKino.lv",
+    "group": "🇱🇻 Kandidāti",
+    "logo": "",
+    "urls": [
+      "https://void.greenhosting.ru/MovifyKino_Mpeg4/index.m3u8"
+    ],
+    "notes": "Публичный каталог; права на распространение не установлены"
+  },
+  {
+    "name": "Pingvīns",
+    "id": "Pingviins.lv",
+    "group": "🇱🇻 Kandidāti",
+    "logo": "",
+    "urls": [
+      "https://void.greenhosting.ru/PingvinsLV_Mpeg4/video.m3u8"
+    ],
+    "notes": "Публичный каталог; геоограничения"
+  }
+]
