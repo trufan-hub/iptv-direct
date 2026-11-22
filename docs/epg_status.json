@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T01:32:17.154557+00:00",
+  "updated_at": "2026-11-22T07:34:23.070638+00:00",
   "catalog_channels": 169,
   "guide_channels": 101,
   "programmes": 8763,
@@ -8,7 +8,7 @@
   "logo_registry_count": 101,
   "logos_added_to_m3u": {
     "docs/direct.m3u": 101,
-    "docs/verified.m3u": 96
+    "docs/verified.m3u": 97
   },
   "compressed_bytes": 140115,
   "uncompressed_bytes": 1702524,
