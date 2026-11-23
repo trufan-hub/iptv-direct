@@ -1,10 +1,10 @@
 {
-  "generated_utc": "2026-11-23T14:01:46.870678+00:00",
+  "generated_utc": "2026-11-23T19:43:14.177605+00:00",
   "catalog_channels": 5,
   "verified_manifests": 5,
   "guide_channels": 4,
-  "programmes": 310,
-  "descriptions": 193,
+  "programmes": 474,
+  "descriptions": 330,
   "source_epg": "https://epgshare01.online/epgshare01/epg_ripper_LV1.xml.gz",
   "source_epg_channels": 105,
   "known_logo_count": 5,
@@ -20,7 +20,7 @@
           "status": "HTTP 200"
         }
       ],
-      "epg_programmes": 119
+      "epg_programmes": 141
     },
     {
       "id": "lv.ltv7",
@@ -33,7 +33,7 @@
           "status": "HTTP 200"
         }
       ],
-      "epg_programmes": 99
+      "epg_programmes": 121
     },
     {
       "id": "lv.retv",
@@ -59,7 +59,7 @@
           "status": "HTTP 200"
         }
       ],
-      "epg_programmes": 48
+      "epg_programmes": 63
     },
     {
       "id": "lv.vdtv",
@@ -72,7 +72,7 @@
           "status": "HTTP 200"
         }
       ],
-      "epg_programmes": 44
+      "epg_programmes": 149
     }
   ]
 }
