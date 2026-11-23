@@ -1,12 +1,12 @@
 {
-  "generated_utc": "2026-11-23T13:43:47.719144+00:00",
+  "generated_utc": "2026-11-23T19:23:44.352489+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 162,
-  "unverified": 7,
-  "api_updated": 106,
-  "previous_used": 62,
-  "bootstrap_used": 1,
+  "verified": 164,
+  "unverified": 5,
+  "api_updated": 110,
+  "previous_used": 59,
+  "bootstrap_used": 0,
   "channels": [
     {
       "name": "Rutube TV",
@@ -196,9 +196,9 @@
       "name": "Дорамы",
       "rutube_id": "5e3edd063411550ed6b67a8c0d7c96ea",
       "status": "verified",
-      "api_status": "http_404",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Индийские фильмы",
@@ -452,9 +452,9 @@
       "name": "Первоуральск ТВ",
       "rutube_id": "59e0373a9aa587e06aeaf9009f86ded1",
       "status": "verified",
-      "api_status": "url_unverified:unverified:HTTPError",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "bootstrap"
+      "source": "rutube_api"
     },
     {
       "name": "Лен ТВ 24",
@@ -579,10 +579,10 @@
     {
       "name": "ЛТВ (Люберцы)",
       "rutube_id": "067561b5754d0b7844762fa92939716b",
-      "status": "candidate_unverified",
-      "api_status": "url_unverified:unverified:HTTPError",
-      "probe": "unverified:HTTPError",
-      "source": "previous"
+      "status": "verified",
+      "api_status": "resolved",
+      "probe": "manifest_ok",
+      "source": "rutube_api"
     },
     {
       "name": "Канал 78",
@@ -627,10 +627,10 @@
     {
       "name": "Липецк 24",
       "rutube_id": "b04fc212802bbf7ec94768c029e54aa9",
-      "status": "candidate_unverified",
-      "api_status": "url_unverified:unverified:HTTPError",
-      "probe": "unverified:HTTPError",
-      "source": "previous"
+      "status": "verified",
+      "api_status": "resolved",
+      "probe": "manifest_ok",
+      "source": "rutube_api"
     },
     {
       "name": "Ариг Ус 24",
