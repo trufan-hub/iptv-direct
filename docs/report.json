@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-23T01:39:37.671195+00:00",
+  "generated_utc": "2026-11-23T07:58:06.022203+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 163,
-  "unverified": 6,
-  "api_updated": 108,
-  "previous_used": 61,
+  "verified": 164,
+  "unverified": 5,
+  "api_updated": 111,
+  "previous_used": 58,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -196,9 +196,9 @@
       "name": "Дорамы",
       "rutube_id": "5e3edd063411550ed6b67a8c0d7c96ea",
       "status": "verified",
-      "api_status": "http_404",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Индийские фильмы",
@@ -211,9 +211,9 @@
     {
       "name": "Турецкие фильмы",
       "rutube_id": "2814e12b4ef6c528967736441c2e2803",
-      "status": "candidate_unverified",
+      "status": "verified",
       "api_status": "http_404",
-      "probe": "unverified:HTTPError",
+      "probe": "manifest_ok",
       "source": "previous"
     },
     {
@@ -1036,9 +1036,9 @@
       "name": "Музыкальные клипы",
       "rutube_id": "e7e04192431a24a750fd8704fa221461",
       "status": "verified",
-      "api_status": "http_404",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Смотри Радио",
@@ -1172,9 +1172,9 @@
       "name": "Record Russian Mix",
       "rutube_id": "2f3e5c6a66617c063f12d8d5d49248c7",
       "status": "verified",
-      "api_status": "url_unverified:unverified:HTTPError",
+      "api_status": "resolved",
       "probe": "manifest_ok",
-      "source": "previous"
+      "source": "rutube_api"
     },
     {
       "name": "Record Deep",
