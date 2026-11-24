@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-11-24T07:43:54.662631+00:00",
+  "generated_utc": "2026-11-24T13:39:26.230884+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 162,
-  "unverified": 7,
+  "verified": 163,
+  "unverified": 6,
   "api_updated": 109,
   "previous_used": 60,
   "bootstrap_used": 0,
@@ -1259,9 +1259,9 @@
     {
       "name": "TNT SPORTS 1 HD",
       "rutube_id": "3aa782bace452e7c4b9f81d767512147",
-      "status": "candidate_unverified",
+      "status": "verified",
       "api_status": "http_404",
-      "probe": "unverified:HTTPError",
+      "probe": "manifest_ok",
       "source": "previous"
     },
     {
