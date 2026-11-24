@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-24T01:38:37.126282+00:00",
+  "generated_utc": "2026-11-24T07:43:54.662631+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 164,
-  "unverified": 5,
-  "api_updated": 110,
-  "previous_used": 59,
+  "verified": 162,
+  "unverified": 7,
+  "api_updated": 109,
+  "previous_used": 60,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -1027,17 +1027,17 @@
     {
       "name": "Ключайка",
       "rutube_id": "ed497bdb28846536f3928849f8f7e469",
-      "status": "verified",
-      "api_status": "resolved",
-      "probe": "manifest_ok",
-      "source": "rutube_api"
+      "status": "candidate_unverified",
+      "api_status": "url_unverified:unverified:HTTPError",
+      "probe": "unverified:HTTPError",
+      "source": "previous"
     },
     {
       "name": "Музыкальные клипы",
       "rutube_id": "e7e04192431a24a750fd8704fa221461",
-      "status": "verified",
+      "status": "candidate_unverified",
       "api_status": "http_404",
-      "probe": "manifest_ok",
+      "probe": "unverified:HTTPError",
       "source": "previous"
     },
     {
@@ -1259,9 +1259,9 @@
     {
       "name": "TNT SPORTS 1 HD",
       "rutube_id": "3aa782bace452e7c4b9f81d767512147",
-      "status": "verified",
+      "status": "candidate_unverified",
       "api_status": "http_404",
-      "probe": "manifest_ok",
+      "probe": "unverified:HTTPError",
       "source": "previous"
     },
     {
@@ -1291,9 +1291,9 @@
     {
       "name": "Sky Sports Golf",
       "rutube_id": "a7a17d6b994f02a80aebd69435266b58",
-      "status": "candidate_unverified",
+      "status": "verified",
       "api_status": "http_404",
-      "probe": "unverified:HTTPError",
+      "probe": "manifest_ok",
       "source": "previous"
     },
     {
