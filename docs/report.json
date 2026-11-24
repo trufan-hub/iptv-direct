@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-23T19:23:44.352489+00:00",
+  "generated_utc": "2026-11-24T01:38:37.126282+00:00",
   "catalog_count": 169,
   "published": 169,
   "verified": 164,
@@ -179,10 +179,10 @@
     {
       "name": "Кинолаффка",
       "rutube_id": "3b7d1499da9396462bfd17282d758d30",
-      "status": "candidate_unverified",
-      "api_status": "url_unverified:unverified:HTTPError",
-      "probe": "unverified:HTTPError",
-      "source": "previous"
+      "status": "verified",
+      "api_status": "resolved",
+      "probe": "manifest_ok",
+      "source": "rutube_api"
     },
     {
       "name": "Кино и Жизнь",
@@ -196,9 +196,9 @@
       "name": "Дорамы",
       "rutube_id": "5e3edd063411550ed6b67a8c0d7c96ea",
       "status": "verified",
-      "api_status": "resolved",
+      "api_status": "http_404",
       "probe": "manifest_ok",
-      "source": "rutube_api"
+      "source": "previous"
     },
     {
       "name": "Индийские фильмы",
@@ -1291,9 +1291,9 @@
     {
       "name": "Sky Sports Golf",
       "rutube_id": "a7a17d6b994f02a80aebd69435266b58",
-      "status": "verified",
+      "status": "candidate_unverified",
       "api_status": "http_404",
-      "probe": "manifest_ok",
+      "probe": "unverified:HTTPError",
       "source": "previous"
     },
     {
