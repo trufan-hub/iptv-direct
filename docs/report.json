@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-25T07:47:41.617527+00:00",
+  "generated_utc": "2026-11-25T13:45:11.429544+00:00",
   "catalog_count": 169,
   "published": 169,
-  "verified": 164,
-  "unverified": 5,
-  "api_updated": 110,
-  "previous_used": 59,
+  "verified": 163,
+  "unverified": 6,
+  "api_updated": 109,
+  "previous_used": 60,
   "bootstrap_used": 0,
   "channels": [
     {
@@ -579,10 +579,10 @@
     {
       "name": "ЛТВ (Люберцы)",
       "rutube_id": "067561b5754d0b7844762fa92939716b",
-      "status": "verified",
-      "api_status": "resolved",
-      "probe": "manifest_ok",
-      "source": "rutube_api"
+      "status": "candidate_unverified",
+      "api_status": "url_unverified:unverified:HTTPError",
+      "probe": "unverified:HTTPError",
+      "source": "previous"
     },
     {
       "name": "Канал 78",
