@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-11-25T13:45:11.534133+00:00",
+  "updated_at": "2026-11-25T19:17:38.525733+00:00",
   "catalog_channels": 169,
   "guide_channels": 103,
   "programmes": 24430,
   "descriptions": 22715,
   "subtitles": 0,
   "genres": 0,
-  "provider_logo_count": 102,
+  "provider_logo_count": 101,
   "cached_logo_count": 104,
   "logo_registry_count": 104,
   "logos_added_to_m3u": {
     "docs/direct.m3u": 104,
-    "docs/verified.m3u": 99
+    "docs/verified.m3u": 100
   },
   "compressed_bytes": 1856483,
   "uncompressed_bytes": 19441669,
