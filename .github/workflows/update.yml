@@ -9,6 +9,7 @@ on:
       - 'build.py'
       - 'build_epg.py'
       - 'logo_cache.py'
+      - test_logo_cache.py
       - 'check_release.py'
       - 'channels.json'
       - '.github/workflows/update.yml'
@@ -25,7 +26,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 30
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -36,6 +37,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install image decoder and test persistent logos
+        run: |
+          python -m pip install 'Pillow==12.1.1'
+          python -m unittest test_logo_cache.py
       - name: Resolve direct Rutube HLS streams
         run: python build.py
       - name: Build self-hosted EPG guide
@@ -50,6 +55,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add docs/direct.m3u docs/verified.m3u docs/report.json docs/guide.xml docs/guide.xml.gz docs/epg_status.json docs/logos.json
+          if [ -d docs/logos ]; then git add docs/logos/; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Update direct IPTV streams'
             git fetch origin main
