@@ -1,15 +1,15 @@
 #EXTM3U url-tvg="https://trufan-hub.github.io/iptv-direct/guide.xml"
 # Direct Rutube API plus one-time fallback snapshot
-# Generated UTC: 2026-11-28T01:40:55.059773+00:00
+# Generated UTC: 2026-11-28T07:38:05.459710+00:00
 #EXTINF:-1 tvg-id="rtv.9ae8e8a6dc58bdad66190475f9872ecd" tvg-name="Rutube TV" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.9ae8e8a6dc58bdad66190475f9872ecd.png",Rutube TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/9ae8e8a6dc58bdad66190475f9872ecd/index.m3u8?s=QLPGcGPP17MFrVGBXsiQJA&e=2095830032&scheme=https
+https://bl.rutube.ru/livestream/9ae8e8a6dc58bdad66190475f9872ecd/index.m3u8?s=OR2YrQdc7KmJ76wJKZ7HQA&e=2095851457&scheme=https
 #EXTINF:-1 tvg-id="rtv.c58f502c7bb34a8fcdd976b221fca292" tvg-name="Первый канал HD" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.c58f502c7bb34a8fcdd976b221fca292.png",Первый канал HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/c58f502c7bb34a8fcdd976b221fca292/index.m3u8?s=NYeOpjMjFfYtUK3f45ylmA&e=2095830032&scheme=https
+https://bl.rutube.ru/livestream/c58f502c7bb34a8fcdd976b221fca292/index.m3u8?s=xbLSXwd9AKyj_CDd4CR2Kw&e=2095851457&scheme=https
 #EXTINF:-1 tvg-id="rtv.c37cd74192c6bc3d6cd6077c0c4fd686" tvg-name="НТВ HD" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.c37cd74192c6bc3d6cd6077c0c4fd686.png",НТВ HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/c37cd74192c6bc3d6cd6077c0c4fd686/index.m3u8?s=m33jcEhCllBHSwvcKQ3o6A&e=2095830032&scheme=https
+https://bl.rutube.ru/livestream/c37cd74192c6bc3d6cd6077c0c4fd686/index.m3u8?s=-wmWauHgYQzOO7moeynxng&e=2095851457&scheme=https
 #EXTINF:-1 tvg-id="rtv.546602986e6a424d74d594876ddb3f04" tvg-name="ТНТ HD" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.546602986e6a424d74d594876ddb3f04.png",ТНТ HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/546602986e6a424d74d594876ddb3f04/index.m3u8?s=Wlo47EGsA4XqyBQziPgcbQ&e=2094643112&scheme=https
@@ -18,7 +18,7 @@ https://bl.rutube.ru/livestream/546602986e6a424d74d594876ddb3f04/index.m3u8?s=Wl
 https://bl.rutube.ru/livestream/c801a7087e29a097192d74c270fbc6c1/index.m3u8?s=Uz6Mbsk2hPPjXFAw0H6gWA&e=2094643113&scheme=https
 #EXTINF:-1 tvg-id="rtv.ca70d39eba2e8771358bbcb4bfbad860" tvg-name="Москва-24" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.ca70d39eba2e8771358bbcb4bfbad860.png",Москва-24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/ca70d39eba2e8771358bbcb4bfbad860/index.m3u8?s=MdwPvK6G1iq2c5KvKHolSA&e=2095830032&scheme=https
+https://bl.rutube.ru/livestream/ca70d39eba2e8771358bbcb4bfbad860/index.m3u8?s=iLvXyoWRhnYs1LsIfGU5cw&e=2095851457&scheme=https
 #EXTINF:-1 tvg-id="rtv.9f87a9a0cecbe773be6fddcbd93585ac" tvg-name="Пятница HD" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.9f87a9a0cecbe773be6fddcbd93585ac.png",Пятница HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/9f87a9a0cecbe773be6fddcbd93585ac/index.m3u8?s=Og1LXw9ViMwYkq0YKZ3_lw&e=2094643114&scheme=https
@@ -30,16 +30,16 @@ https://bl.rutube.ru/livestream/7bf12d9c050f9a7ef3728db5730432ae/index.m3u8?s=wX
 https://bl.rutube.ru/livestream/392b4686b770bae2da6bf5ac4574add5/index.m3u8?s=rIFQpep8Y69KTQkMb9S3Lg&e=2094643115&scheme=https
 #EXTINF:-1 tvg-id="rtv.310744c10a5809da38aa445c952976da" tvg-name="Суббота!" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.310744c10a5809da38aa445c952976da.png",Суббота!
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/310744c10a5809da38aa445c952976da/index.m3u8?s=Rop-PAkrC_dMDU_YmO8iUg&e=2095830032&scheme=https
+https://bl.rutube.ru/livestream/310744c10a5809da38aa445c952976da/index.m3u8?s=bivHKxQapnBguA5Oc-bJNA&e=2095851457&scheme=https
 #EXTINF:-1 tvg-id="rtv.5c9327074e25ca86f3111d4085cbbb65" tvg-name="Ю" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.5c9327074e25ca86f3111d4085cbbb65.png",Ю
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/5c9327074e25ca86f3111d4085cbbb65/index.m3u8?s=jwjwIoDmXIUisvQbS5epIw&e=2094643116&scheme=https
 #EXTINF:-1 tvg-id="rtv.cf958b6c9ae4504be5fc2c1de358a017" tvg-name="Нано ТВ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.cf958b6c9ae4504be5fc2c1de358a017.png",Нано ТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/cf958b6c9ae4504be5fc2c1de358a017/index.m3u8?s=qmwo266qPdI60f1-drvBuQ&e=2095830033&scheme=https
+https://bl.rutube.ru/livestream/cf958b6c9ae4504be5fc2c1de358a017/index.m3u8?s=403RBL6bzp5s0s4If5ZC1Q&e=2095851459&scheme=https
 #EXTINF:-1 tvg-id="rtv.1da5d92af8c55b16241f1eb12a27f00c" tvg-name="Охотник и рыболов" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.1da5d92af8c55b16241f1eb12a27f00c.png",Охотник и рыболов
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/1da5d92af8c55b16241f1eb12a27f00c/index.m3u8?s=uH0SbipgajJfyaGuUsZirQ&e=2095830033&scheme=https
+https://bl.rutube.ru/livestream/1da5d92af8c55b16241f1eb12a27f00c/index.m3u8?s=hHByQspwpb7MVaxedBYOOw&e=2095851459&scheme=https
 #EXTINF:-1 tvg-id="rtv.eddcc86d1dee0b5def546ea388eb38ea" tvg-name="Документалки и шоу" group-title="Rutube Direct",Документалки и шоу
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/eddcc86d1dee0b5def546ea388eb38ea/index.m3u8?s=4WjEFg2EaO3tAJ9_EeJg1A&e=2094643117&scheme=https
@@ -54,19 +54,19 @@ https://bl.rutube.ru/livestream/2619fc295c16585ef018041d88f14db0/index.m3u8?s=xh
 https://bl.rutube.ru/livestream/7c3d1a4cc0b4dff1176aa2dbb0b90000/index.m3u8?s=D5rBjxpPMTyDTkvvdnMsEQ&e=2094643118&scheme=https
 #EXTINF:-1 tvg-id="rtv.406973c72e9d0449feef05ef7811ad01" tvg-name="Загородный International" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.406973c72e9d0449feef05ef7811ad01.png",Загородный International
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/406973c72e9d0449feef05ef7811ad01/index.m3u8?s=XtnZ8e5-8j9gTRgcADKiYg&e=2095830033&scheme=https
+https://bl.rutube.ru/livestream/406973c72e9d0449feef05ef7811ad01/index.m3u8?s=8GVYf088OOsZEiGF4eCt2g&e=2095851460&scheme=https
 #EXTINF:-1 tvg-id="rtv.a11c890a0ec0730ad33bdaaf2d244e1a" tvg-name="Тайна" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.a11c890a0ec0730ad33bdaaf2d244e1a.png",Тайна
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/a11c890a0ec0730ad33bdaaf2d244e1a/index.m3u8?s=ARNVy00M72hneDRE1udzog&e=2095830034&scheme=https
+https://bl.rutube.ru/livestream/a11c890a0ec0730ad33bdaaf2d244e1a/index.m3u8?s=D3J-_KfWWcVUvRTlb4OgHw&e=2095851460&scheme=https
 #EXTINF:-1 tvg-id="rtv.4965b7b928c4a143d708ab424be01d37" tvg-name="Киножелезо" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.4965b7b928c4a143d708ab424be01d37.png",Киножелезо
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/4965b7b928c4a143d708ab424be01d37/index.m3u8?s=l5CNeqYTovOnJfkr8jR3Lw&e=2095830034&scheme=https
+https://bl.rutube.ru/livestream/4965b7b928c4a143d708ab424be01d37/index.m3u8?s=SQALi7CpXiINvcDBeSOm9A&e=2095851460&scheme=https
 #EXTINF:-1 tvg-id="rtv.3b7d1499da9396462bfd17282d758d30" tvg-name="Кинолаффка" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.3b7d1499da9396462bfd17282d758d30.png",Кинолаффка
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/3b7d1499da9396462bfd17282d758d30/index.m3u8?s=eEczkPzjRj8cqCEgDEWlnQ&e=2095830034&scheme=https
+https://bl.rutube.ru/livestream/3b7d1499da9396462bfd17282d758d30/index.m3u8?s=pTdRxwubKjldAGR0uvwjVA&e=2095851460&scheme=https
 #EXTINF:-1 tvg-id="rtv.09e51eefa939595a4ac67182c6fb3e4e" tvg-name="Кино и Жизнь" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.09e51eefa939595a4ac67182c6fb3e4e.png",Кино и Жизнь
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/09e51eefa939595a4ac67182c6fb3e4e/index.m3u8?s=PEZP2podqQ-h7wliofe7Jg&e=2095830034&scheme=https
+https://bl.rutube.ru/livestream/09e51eefa939595a4ac67182c6fb3e4e/index.m3u8?s=n4-I2c6p7LxZMjE7Kkv9sw&e=2095851460&scheme=https
 #EXTINF:-1 tvg-id="rtv.5e3edd063411550ed6b67a8c0d7c96ea" tvg-name="Дорамы" group-title="Rutube Direct",Дорамы
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/5e3edd063411550ed6b67a8c0d7c96ea/index.m3u8?s=yhwjdTra8XdUaydoXWvi8A&e=2095721079&scheme=https
@@ -84,7 +84,7 @@ https://bl.rutube.ru/livestream/4d06d4d152d087f3792a5b15dc729562/index.m3u8?s=-i
 https://bl.rutube.ru/livestream/300560a65014ec501a25b1f79df9ad90/index.m3u8?s=Hr2m5YtKOn8YupKTgdySrg&e=2094643120&scheme=https
 #EXTINF:-1 tvg-id="rtv.e05401be60a9cc719fa7075b6e77b86d" tvg-name="Детективы каждый день" group-title="Rutube Direct",Детективы каждый день
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/e05401be60a9cc719fa7075b6e77b86d/index.m3u8?s=flQeQxRZA-Xscb7MIGVcVA&e=2095830035&scheme=https
+https://bl.rutube.ru/livestream/e05401be60a9cc719fa7075b6e77b86d/index.m3u8?s=cVxoJN6HIH5e6SN2iaJw0g&e=2095851461&scheme=https
 #EXTINF:-1 tvg-id="rtv.54de765aeea96a73d23a24b4e2cab07d" tvg-name="Фантастические фильмы" group-title="Rutube Direct",Фантастические фильмы
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/54de765aeea96a73d23a24b4e2cab07d/index.m3u8?s=eGVeTs9PsYWiBVfMbLlpZw&e=2094643121&scheme=https
@@ -99,10 +99,10 @@ https://bl.rutube.ru/livestream/74bb437ef478a52f42198c50d4241dc7/index.m3u8?s=fg
 https://bl.rutube.ru/livestream/680dfe110840cf882437082b948578d6/index.m3u8?s=NpdvuwaksZDjaRHIfCSz6Q&e=2094643121&scheme=https
 #EXTINF:-1 tvg-id="rtv.21f3993ed8291b70208aa06c982c731f" tvg-name="Epic Media Love" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.21f3993ed8291b70208aa06c982c731f.png",Epic Media Love
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/21f3993ed8291b70208aa06c982c731f/index.m3u8?s=mIeM2P2R6AVILZaTrZAf5w&e=2095830036&scheme=https
+https://bl.rutube.ru/livestream/21f3993ed8291b70208aa06c982c731f/index.m3u8?s=5bwO3hu3egrlhkqNbSAsUg&e=2095851462&scheme=https
 #EXTINF:-1 tvg-id="rtv.0ed0696149c131d3a7349372d730d4e6" tvg-name="Epic Media Plus" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.0ed0696149c131d3a7349372d730d4e6.png",Epic Media Plus
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/0ed0696149c131d3a7349372d730d4e6/index.m3u8?s=MtsO-HpPXvrYqAhLSI8oAw&e=2095830036&scheme=https
+https://bl.rutube.ru/livestream/0ed0696149c131d3a7349372d730d4e6/index.m3u8?s=4McaTZn7Ma2S7TL5NORd0w&e=2095851462&scheme=https
 #EXTINF:-1 tvg-id="rtv.99f8f1d827641b766de62fe9023642fa" tvg-name="Amazon Prime Video mans' club" group-title="Rutube Direct",Amazon Prime Video mans' club
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/99f8f1d827641b766de62fe9023642fa/index.m3u8?s=i5KV5Yk-bvsIAPx_XmSyPQ&e=2094643122&scheme=https
@@ -123,118 +123,118 @@ https://bl.rutube.ru/livestream/6f99d2a36810a41acc8f66af25441ae3/index.m3u8?s=jb
 https://bl.rutube.ru/livestream/3abeb7577fd38ac4b8130bb8e03418f2/index.m3u8?s=tzKA9CCIR1A_47SxQkXSuw&e=2094643123&scheme=https
 #EXTINF:-1 tvg-id="rtv.31cd70d4054fbbde3b169d9a6972515c" tvg-name="Вселенная DC" group-title="Rutube Direct",Вселенная DC
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/31cd70d4054fbbde3b169d9a6972515c/index.m3u8?s=6ZFMkLiy-p_awQM2iUqnZA&e=2095830037&scheme=https
+https://bl.rutube.ru/livestream/31cd70d4054fbbde3b169d9a6972515c/index.m3u8?s=G1I-mvA_TtAwBEEd19cv-w&e=2095851463&scheme=https
 #EXTINF:-1 tvg-id="rtv.e08e513c4e33f52fce3a975b5cb6932c" tvg-name="Твой кинотеатр" group-title="Rutube Direct",Твой кинотеатр
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/e08e513c4e33f52fce3a975b5cb6932c/index.m3u8?s=DKSW_2cJQ9mEUpITzEXgbA&e=2094643124&scheme=https
 #EXTINF:-1 tvg-id="rtv.2d7fa51716500fba52586d594201777f" tvg-name="HHQ" group-title="Rutube Direct",HHQ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/2d7fa51716500fba52586d594201777f/index.m3u8?s=tELitUC8GsAgFwSa_va1EA&e=2095830037&scheme=https
+https://bl.rutube.ru/livestream/2d7fa51716500fba52586d594201777f/index.m3u8?s=mfuzm3lQNqBGA5hJ8fF-yg&e=2095851463&scheme=https
 #EXTINF:-1 tvg-id="rtv.55fec7f2c11f4decc66568fca39f26b2" tvg-name="Буряад ТВ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.55fec7f2c11f4decc66568fca39f26b2.png",Буряад ТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/55fec7f2c11f4decc66568fca39f26b2/index.m3u8?s=FiCPR412aqZOlZ4aMyYCjA&e=2095830037&scheme=https
+https://bl.rutube.ru/livestream/55fec7f2c11f4decc66568fca39f26b2/index.m3u8?s=32HYJoKCazfSkKzv9Q4lHg&e=2095851463&scheme=https
 #EXTINF:-1 tvg-id="rtv.39c5bfe012402990e6402eded8bdc761" tvg-name="ОТС HD" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.39c5bfe012402990e6402eded8bdc761.png",ОТС HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/39c5bfe012402990e6402eded8bdc761/index.m3u8?s=3l5ZN5-HqfoyBqRF5X9weA&e=2095830037&scheme=https
+https://bl.rutube.ru/livestream/39c5bfe012402990e6402eded8bdc761/index.m3u8?s=6qI9wYDuyD7ZgkUcqArPwg&e=2095851463&scheme=https
 #EXTINF:-1 tvg-id="rtv.46c03b7f1a7255326900f4a60a9b44e0" tvg-name="Союзный" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.46c03b7f1a7255326900f4a60a9b44e0.png",Союзный
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/46c03b7f1a7255326900f4a60a9b44e0/index.m3u8?s=OJFgWraKWeLrY5qM8R0dWg&e=2095830037&scheme=https
+https://bl.rutube.ru/livestream/46c03b7f1a7255326900f4a60a9b44e0/index.m3u8?s=x70_4zdZISwiEbqt21zlow&e=2095851463&scheme=https
 #EXTINF:-1 tvg-id="rtv.813dc0c5a944559e7e52b840d09a84f6" tvg-name="Сургут 86 FHD" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.813dc0c5a944559e7e52b840d09a84f6.png",Сургут 86 FHD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/813dc0c5a944559e7e52b840d09a84f6/index.m3u8?s=IpShrjsrE3CSWYZe1CnRMA&e=2095830037&scheme=https
+https://bl.rutube.ru/livestream/813dc0c5a944559e7e52b840d09a84f6/index.m3u8?s=JWBPHSTxdXbGMAqHmN6e8Q&e=2095851463&scheme=https
 #EXTINF:-1 tvg-id="rtv.7a35d5186515db85144d86900ebe1daf" tvg-name="Сургут 1 FHD" group-title="Rutube Direct",Сургут 1 FHD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/7a35d5186515db85144d86900ebe1daf/index.m3u8?s=a_9ysSaujm610FNhn5qZ7A&e=2095830037&scheme=https
+https://bl.rutube.ru/livestream/7a35d5186515db85144d86900ebe1daf/index.m3u8?s=UQkPZRbBn8y5DEii5qb1Qw&e=2095851463&scheme=https
 #EXTINF:-1 tvg-id="rtv.f79ff24ad16cf5f5eb52994647596d13" tvg-name="Барс" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.f79ff24ad16cf5f5eb52994647596d13.png",Барс
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/f79ff24ad16cf5f5eb52994647596d13/index.m3u8?s=kk_Q5Nm5kBIxr4EGh1HuIA&e=2095830037&scheme=https
+https://bl.rutube.ru/livestream/f79ff24ad16cf5f5eb52994647596d13/index.m3u8?s=nLkSgaCmNN3i83bk6FC9-A&e=2095851464&scheme=https
 #EXTINF:-1 tvg-id="rtv.f6160b4e48cb32b4d5438c66c83b69dc" tvg-name="ЮУРГУ-ТВ" group-title="Rutube Direct",ЮУРГУ-ТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/f6160b4e48cb32b4d5438c66c83b69dc/index.m3u8?s=AhzRZlqe1B51jE6vn2q_9Q&e=2095830038&scheme=https
+https://bl.rutube.ru/livestream/f6160b4e48cb32b4d5438c66c83b69dc/index.m3u8?s=hA_Kg3l7ifx-tO9bk6glFA&e=2095851464&scheme=https
 #EXTINF:-1 tvg-id="rtv.360eabf2bf139f0a97b971c4b92d09b6" tvg-name="Югра" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.360eabf2bf139f0a97b971c4b92d09b6.png",Югра
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/360eabf2bf139f0a97b971c4b92d09b6/index.m3u8?s=7FpRJx2QDmLSY-OHSGBMKg&e=2095830038&scheme=https
+https://bl.rutube.ru/livestream/360eabf2bf139f0a97b971c4b92d09b6/index.m3u8?s=5c08T3ofFmiO76GVlMlXzw&e=2095851464&scheme=https
 #EXTINF:-1 tvg-id="rtv.cf71a03fba2c98f47a539e0e39b9d333" tvg-name="Крым 24" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.cf71a03fba2c98f47a539e0e39b9d333.png",Крым 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/cf71a03fba2c98f47a539e0e39b9d333/index.m3u8?s=b6k5Avg_lqeNwC2PpxtpcQ&e=2095830038&scheme=https
+https://bl.rutube.ru/livestream/cf71a03fba2c98f47a539e0e39b9d333/index.m3u8?s=Ltf-wdqrhgMmppBlra4a4g&e=2095851464&scheme=https
 #EXTINF:-1 tvg-id="rtv.23afd7debed1cfc7a8efa0827c24d836" tvg-name="Липецкое время" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.23afd7debed1cfc7a8efa0827c24d836.png",Липецкое время
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/23afd7debed1cfc7a8efa0827c24d836/index.m3u8?s=Gt0ENcHVFKxbFhYralwxeg&e=2095830038&scheme=https
+https://bl.rutube.ru/livestream/23afd7debed1cfc7a8efa0827c24d836/index.m3u8?s=fbPgYYjqoqMrkh0amu7EOA&e=2095851465&scheme=https
 #EXTINF:-1 tvg-id="rtv.59e0373a9aa587e06aeaf9009f86ded1" tvg-name="Первоуральск ТВ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.59e0373a9aa587e06aeaf9009f86ded1.png",Первоуральск ТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/59e0373a9aa587e06aeaf9009f86ded1/index.m3u8?s=AGOrQxZ2I52KOJB-ZEnEWg&e=2095830038&scheme=https
+https://bl.rutube.ru/livestream/59e0373a9aa587e06aeaf9009f86ded1/index.m3u8?s=mhFphHJR9xn33q7vQ89Dcw&e=2095851465&scheme=https
 #EXTINF:-1 tvg-id="rtv.dd022de9cc6c8af89409513fa0a6117a" tvg-name="Лен ТВ 24" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.dd022de9cc6c8af89409513fa0a6117a.png",Лен ТВ 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/dd022de9cc6c8af89409513fa0a6117a/index.m3u8?s=RdO9HBCtnhPslZ2ixaNfvA&e=2095830039&scheme=https
+https://bl.rutube.ru/livestream/dd022de9cc6c8af89409513fa0a6117a/index.m3u8?s=4fMQjXIEUnwvThXGA1g9nQ&e=2095851465&scheme=https
 #EXTINF:-1 tvg-id="rtv.c6f66b644424c117f41e48062719ceed" tvg-name="4 канал (Екатеринбург)" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.c6f66b644424c117f41e48062719ceed.png",4 канал (Екатеринбург)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/c6f66b644424c117f41e48062719ceed/index.m3u8?s=t43PwJo1a9l9UL0p8Bju_A&e=2095830039&scheme=https
+https://bl.rutube.ru/livestream/c6f66b644424c117f41e48062719ceed/index.m3u8?s=RlX4F8LsVd1aFI1n29YNCg&e=2095851465&scheme=https
 #EXTINF:-1 tvg-id="rtv.fcafa0d358df671e4f7c61ca54c79bea" tvg-name="РГВК Дагестан" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.fcafa0d358df671e4f7c61ca54c79bea.png",РГВК Дагестан
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/fcafa0d358df671e4f7c61ca54c79bea/index.m3u8?s=-eTSyCHz2eyAuarzYbB6wg&e=2095830039&scheme=https
+https://bl.rutube.ru/livestream/fcafa0d358df671e4f7c61ca54c79bea/index.m3u8?s=lnDt6Rgd8SY2oyLnv7pAqQ&e=2095851466&scheme=https
 #EXTINF:-1 tvg-id="rtv.a969ca8279415378bc8abd345fcfded9" tvg-name="Таврия" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.a969ca8279415378bc8abd345fcfded9.png",Таврия
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/a969ca8279415378bc8abd345fcfded9/index.m3u8?s=enJXK9Ima2LQAZzSw9GFdQ&e=2095830039&scheme=https
+https://bl.rutube.ru/livestream/a969ca8279415378bc8abd345fcfded9/index.m3u8?s=6ji-F_qAhysO4wN-xBnmEg&e=2095851465&scheme=https
 #EXTINF:-1 tvg-id="rtv.aff0a2b356d2e1eef55bdb868be4dcc3" tvg-name="41 Регион" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.aff0a2b356d2e1eef55bdb868be4dcc3.png",41 Регион
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/aff0a2b356d2e1eef55bdb868be4dcc3/index.m3u8?s=_5C7Mx0j12ClWbxBMdMBKg&e=2095830039&scheme=https
+https://bl.rutube.ru/livestream/aff0a2b356d2e1eef55bdb868be4dcc3/index.m3u8?s=X7S6FKMqQAsow3hH35FblA&e=2095851466&scheme=https
 #EXTINF:-1 tvg-id="rtv.5a88a8d75565c5cdebeb11d87bfc61e9" tvg-name="Вся Уфа" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.5a88a8d75565c5cdebeb11d87bfc61e9.png",Вся Уфа
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/5a88a8d75565c5cdebeb11d87bfc61e9/index.m3u8?s=pdt1Kv469gK1qI0IlkBX_Q&e=2095830040&scheme=https
+https://bl.rutube.ru/livestream/5a88a8d75565c5cdebeb11d87bfc61e9/index.m3u8?s=KwKNf_BKW9xZvPl35L_Bqg&e=2095851466&scheme=https
 #EXTINF:-1 tvg-id="rtv.ee431650738a594119c3516ceda72775" tvg-name="Мы" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.ee431650738a594119c3516ceda72775.png",Мы
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/ee431650738a594119c3516ceda72775/index.m3u8?s=qQxyL3U0oNgm3cRIELA5Kw&e=2095830040&scheme=https
+https://bl.rutube.ru/livestream/ee431650738a594119c3516ceda72775/index.m3u8?s=IdaqZBr8yB2jYhhbSA7D3g&e=2095851466&scheme=https
 #EXTINF:-1 tvg-id="rtv.37d722b7752cd193a3f94d71cc9d60f5" tvg-name="Ника ТВ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.37d722b7752cd193a3f94d71cc9d60f5.png",Ника ТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/37d722b7752cd193a3f94d71cc9d60f5/index.m3u8?s=_S6Rh4neAMtOByNaYe-E3Q&e=2095830040&scheme=https
+https://bl.rutube.ru/livestream/37d722b7752cd193a3f94d71cc9d60f5/index.m3u8?s=glTkNVMgwcjuBWZjIClk_w&e=2095851466&scheme=https
 #EXTINF:-1 tvg-id="rtv.5fa486bf465c8735fff9f41b372610cc" tvg-name="Среда" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.5fa486bf465c8735fff9f41b372610cc.png",Среда
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/5fa486bf465c8735fff9f41b372610cc/index.m3u8?s=WrSpH5tYemDMX_RNr5Ho5g&e=2095830040&scheme=https
+https://bl.rutube.ru/livestream/5fa486bf465c8735fff9f41b372610cc/index.m3u8?s=cQ-gxYtuhzfCbqD20mcT2g&e=2095851466&scheme=https
 #EXTINF:-1 tvg-id="rtv.673b559e08f8b99d65a4e8fbbceb911b" tvg-name="UTV" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.673b559e08f8b99d65a4e8fbbceb911b.png",UTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/673b559e08f8b99d65a4e8fbbceb911b/index.m3u8?s=rfEtf85vVGqMlpR23QFhWQ&e=2095830040&scheme=https
+https://bl.rutube.ru/livestream/673b559e08f8b99d65a4e8fbbceb911b/index.m3u8?s=1Rsx0t19FSRwpk39h4XsMA&e=2095851466&scheme=https
 #EXTINF:-1 tvg-id="rtv.5ab908fccfac5bb43ef2b1e4182256b0" tvg-name="Звезда" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.5ab908fccfac5bb43ef2b1e4182256b0.png",Звезда
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/5ab908fccfac5bb43ef2b1e4182256b0/index.m3u8?s=Dogm4LTCfgI3WBeWFYhIag&e=2095830040&scheme=https
+https://bl.rutube.ru/livestream/5ab908fccfac5bb43ef2b1e4182256b0/index.m3u8?s=pktD2vRzVLGNkCPrtIhDpQ&e=2095851467&scheme=https
 #EXTINF:-1 tvg-id="rtv.dce1080977de5e89dcbd1dd24d014b4e" tvg-name="Сангат" group-title="Rutube Direct",Сангат
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/dce1080977de5e89dcbd1dd24d014b4e/index.m3u8?s=hxPb_OgEnNPf9cfVcOfzKg&e=2095830041&scheme=https
+https://bl.rutube.ru/livestream/dce1080977de5e89dcbd1dd24d014b4e/index.m3u8?s=jTwZpCZppIA9zVF7JTEq5A&e=2095851467&scheme=https
 #EXTINF:-1 tvg-id="rtv.bed2dcda74004e4e9a61966d2848c027" tvg-name="Волга" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.bed2dcda74004e4e9a61966d2848c027.png",Волга
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/bed2dcda74004e4e9a61966d2848c027/index.m3u8?s=KmBDPHvR86TXVzPP_f6PPQ&e=2095830041&scheme=https
+https://bl.rutube.ru/livestream/bed2dcda74004e4e9a61966d2848c027/index.m3u8?s=vKOUNrlZn4lnclaNxfjmLQ&e=2095851467&scheme=https
 #EXTINF:-1 tvg-id="rtv.067561b5754d0b7844762fa92939716b" tvg-name="ЛТВ (Люберцы)" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.067561b5754d0b7844762fa92939716b.png",ЛТВ (Люберцы)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/067561b5754d0b7844762fa92939716b/index.m3u8?s=7GJaxtzfsac2ZJNv6cRiAg&e=2095830041&scheme=https
+https://bl.rutube.ru/livestream/067561b5754d0b7844762fa92939716b/index.m3u8?s=loAs1Zuie-5oqTPXTDCkZA&e=2095851468&scheme=https
 #EXTINF:-1 tvg-id="rtv.bbf23277dbd0dd0e6a623526d4c3f8c9" tvg-name="Канал 78" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.bbf23277dbd0dd0e6a623526d4c3f8c9.png",Канал 78
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/bbf23277dbd0dd0e6a623526d4c3f8c9/index.m3u8?s=SbvIFRmSadeh1dztpIJteg&e=2095830041&scheme=https
+https://bl.rutube.ru/livestream/bbf23277dbd0dd0e6a623526d4c3f8c9/index.m3u8?s=M8RPPBtzsjJholY5T1kMyw&e=2095851468&scheme=https
 #EXTINF:-1 tvg-id="rtv.e30732c0045af997cb7312822534522f" tvg-name="Волга 24" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.e30732c0045af997cb7312822534522f.png",Волга 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/e30732c0045af997cb7312822534522f/index.m3u8?s=nr-8t4tTpmTTY-0UHkDNQQ&e=2095830041&scheme=https
+https://bl.rutube.ru/livestream/e30732c0045af997cb7312822534522f/index.m3u8?s=5kNFMreongBmzHrHxMpM0A&e=2095851468&scheme=https
 #EXTINF:-1 tvg-id="rtv.cf7e6ad2c24ce743b5b60478c176037b" tvg-name="Башкортостан 24" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.cf7e6ad2c24ce743b5b60478c176037b.png",Башкортостан 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/cf7e6ad2c24ce743b5b60478c176037b/index.m3u8?s=-ywwq5rfB4JrTEVc6mOKYQ&e=2095830042&scheme=https
+https://bl.rutube.ru/livestream/cf7e6ad2c24ce743b5b60478c176037b/index.m3u8?s=7oCu9BRPL3LTabmk9OqOIw&e=2095851468&scheme=https
 #EXTINF:-1 tvg-id="rtv.7c5ae60686a94e04691f6917e1dec066" tvg-name="Абакан 24" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.7c5ae60686a94e04691f6917e1dec066.png",Абакан 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/7c5ae60686a94e04691f6917e1dec066/index.m3u8?s=H1LHloZuuDBPDbfFKpjlgA&e=2095830042&scheme=https
+https://bl.rutube.ru/livestream/7c5ae60686a94e04691f6917e1dec066/index.m3u8?s=QuNqMUe1kC6P_j3CuQ47xQ&e=2095851468&scheme=https
 #EXTINF:-1 tvg-id="rtv.e07fffc5eb21f98a5ade09e825d7095a" tvg-name="Саратов 24" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.e07fffc5eb21f98a5ade09e825d7095a.png",Саратов 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/e07fffc5eb21f98a5ade09e825d7095a/index.m3u8?s=91MzCy59piFqQovTblL6Lg&e=2095830042&scheme=https
+https://bl.rutube.ru/livestream/e07fffc5eb21f98a5ade09e825d7095a/index.m3u8?s=JYZMaqJWYlF3dmHt_K8g3A&e=2095851468&scheme=https
 #EXTINF:-1 tvg-id="rtv.b04fc212802bbf7ec94768c029e54aa9" tvg-name="Липецк 24" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.b04fc212802bbf7ec94768c029e54aa9.png",Липецк 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/b04fc212802bbf7ec94768c029e54aa9/index.m3u8?s=dg4qF7uNH2IoKdnnPJJEDg&e=2095830042&scheme=https
+https://bl.rutube.ru/livestream/b04fc212802bbf7ec94768c029e54aa9/index.m3u8?s=dmsRkTAkAbVyWBPVGfBx4Q&e=2095851468&scheme=https
 #EXTINF:-1 tvg-id="rtv.5d9273a93631b87a3bbdc883bb3a58cb" tvg-name="Ариг Ус 24" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.5d9273a93631b87a3bbdc883bb3a58cb.png",Ариг Ус 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/5d9273a93631b87a3bbdc883bb3a58cb/index.m3u8?s=eeurUW8qXJESXDRZanWM-Q&e=2095830042&scheme=https
+https://bl.rutube.ru/livestream/5d9273a93631b87a3bbdc883bb3a58cb/index.m3u8?s=mfOUFvPe15dwe1UJMYJXfg&e=2095851468&scheme=https
 #EXTINF:-1 tvg-id="rtv.72ced5d533f940251e5e4bd5d61f6bc9" tvg-name="ДОН 24" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.72ced5d533f940251e5e4bd5d61f6bc9.png",ДОН 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/72ced5d533f940251e5e4bd5d61f6bc9/index.m3u8?s=GYoJKNqhAoscks0iw5RrVA&e=2094643133&scheme=https
 #EXTINF:-1 tvg-id="rtv.9b482361d6c845f7d70eafc98356d8bf" tvg-name="АРИС 24" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.9b482361d6c845f7d70eafc98356d8bf.png",АРИС 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/9b482361d6c845f7d70eafc98356d8bf/index.m3u8?s=EEQLKeMXHpTBt5Q1gU5xsQ&e=2095830043&scheme=https
+https://bl.rutube.ru/livestream/9b482361d6c845f7d70eafc98356d8bf/index.m3u8?s=9fUXxDiydvB930AK0odqBg&e=2095851469&scheme=https
 #EXTINF:-1 tvg-id="rtv.3053eeaecc60e0adef57b81d3498fdd0" tvg-name="ВЕТТА 24" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.3053eeaecc60e0adef57b81d3498fdd0.png",ВЕТТА 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/3053eeaecc60e0adef57b81d3498fdd0/index.m3u8?s=0DpPsKi_nztAl08qCYTxFQ&e=2095830043&scheme=https
+https://bl.rutube.ru/livestream/3053eeaecc60e0adef57b81d3498fdd0/index.m3u8?s=0wz62UTP7hmVnhv7CEtbqA&e=2095851469&scheme=https
 #EXTINF:-1 tvg-id="rtv.43269ba8fb179e298b1e497f557e8d2d" tvg-name="Мир 24" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.43269ba8fb179e298b1e497f557e8d2d.png",Мир 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/43269ba8fb179e298b1e497f557e8d2d/index.m3u8?s=XyyiLy0lDBIIPY0Vhr0sdQ&e=2094643134&scheme=https
@@ -243,103 +243,103 @@ https://bl.rutube.ru/livestream/43269ba8fb179e298b1e497f557e8d2d/index.m3u8?s=Xy
 https://bl.rutube.ru/livestream/afef67d151b5a607dee1ef0aa299a52c/index.m3u8?s=cNxJZExJjq914n_HkwwO8A&e=2094643134&scheme=https
 #EXTINF:-1 tvg-id="rtv.52a1592710d8803b0570bfef9d2fbeff" tvg-name="Губерния 33" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.52a1592710d8803b0570bfef9d2fbeff.png",Губерния 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/52a1592710d8803b0570bfef9d2fbeff/index.m3u8?s=MnkLsOyS9jfANNA0dyr7pw&e=2095830043&scheme=https
+https://bl.rutube.ru/livestream/52a1592710d8803b0570bfef9d2fbeff/index.m3u8?s=4dwyiFFDGDT9cxTH9F1AQA&e=2095851470&scheme=https
 #EXTINF:-1 tvg-id="rtv.57486bf8e1c01d16a5a939c463867fab" tvg-name="Рифей-ТВ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.57486bf8e1c01d16a5a939c463867fab.png",Рифей-ТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/57486bf8e1c01d16a5a939c463867fab/index.m3u8?s=XqiwvOFMN-TjkojMINYkgQ&e=2095830043&scheme=https
+https://bl.rutube.ru/livestream/57486bf8e1c01d16a5a939c463867fab/index.m3u8?s=br0r8Y9p8GZ1ByrGKE4a9g&e=2095851470&scheme=https
 #EXTINF:-1 tvg-id="rtv.740503607d216b5d467694a1e8fb39a8" tvg-name="ТМК" group-title="Rutube Direct",ТМК
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/740503607d216b5d467694a1e8fb39a8/index.m3u8?s=tK2fDwgRot9ryFNR_zYY_A&e=2095830043&scheme=https
+https://bl.rutube.ru/livestream/740503607d216b5d467694a1e8fb39a8/index.m3u8?s=ZgWc7eiyxGLx5cokhybvHg&e=2095851470&scheme=https
 #EXTINF:-1 tvg-id="rtv.0064bd09060c8b8469fef19f269e8a8a" tvg-name="Мой мир" group-title="Rutube Direct",Мой мир
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/0064bd09060c8b8469fef19f269e8a8a/index.m3u8?s=XJ609Z2x3lJwUDYXKqUfMw&e=2095830043&scheme=https
+https://bl.rutube.ru/livestream/0064bd09060c8b8469fef19f269e8a8a/index.m3u8?s=ijOhIJ7rdP6JwYTtZ9kIuw&e=2095851471&scheme=https
 #EXTINF:-1 tvg-id="rtv.f372aa2aff09518d050ecdf70956012c" tvg-name="КРИК-ТВ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.f372aa2aff09518d050ecdf70956012c.png",КРИК-ТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/f372aa2aff09518d050ecdf70956012c/index.m3u8?s=PrBIRTdP2y21yWWuOYnaUw&e=2095830043&scheme=https
+https://bl.rutube.ru/livestream/f372aa2aff09518d050ecdf70956012c/index.m3u8?s=Re3EqYreOzngaqHjdLll0g&e=2095851470&scheme=https
 #EXTINF:-1 tvg-id="rtv.1932f750f00f3a742a1d90c62d0076ad" tvg-name="Своё ТВ Ставрополь" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.1932f750f00f3a742a1d90c62d0076ad.png",Своё ТВ Ставрополь
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/1932f750f00f3a742a1d90c62d0076ad/index.m3u8?s=E49fEALnoB9rt2GYa3RkOQ&e=2095830044&scheme=https
+https://bl.rutube.ru/livestream/1932f750f00f3a742a1d90c62d0076ad/index.m3u8?s=1leHWiiVFZg3-2o-XQ3HmQ&e=2095851470&scheme=https
 #EXTINF:-1 tvg-id="rtv.f6a6d5c955180d0d0f80c66d0b6150d3" tvg-name="Вместе-РФ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.f6a6d5c955180d0d0f80c66d0b6150d3.png",Вместе-РФ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/f6a6d5c955180d0d0f80c66d0b6150d3/index.m3u8?s=fnvQ91ZTWFC4tteL5jbz1g&e=2095830044&scheme=https
+https://bl.rutube.ru/livestream/f6a6d5c955180d0d0f80c66d0b6150d3/index.m3u8?s=vz5iT46fs_2Cl3wRJpCeUw&e=2095851470&scheme=https
 #EXTINF:-1 tvg-id="rtv.ff5c11c9a51750f5d33427762abc315c" tvg-name="Продвижение" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.ff5c11c9a51750f5d33427762abc315c.png",Продвижение
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/ff5c11c9a51750f5d33427762abc315c/index.m3u8?s=blSKkc3tnh7qGfBF1BnoJA&e=2095830044&scheme=https
+https://bl.rutube.ru/livestream/ff5c11c9a51750f5d33427762abc315c/index.m3u8?s=SnBt9NihidmE__bEpl_-Yg&e=2095851471&scheme=https
 #EXTINF:-1 tvg-id="rtv.342a3e4f3c9bb0d7830a52af0d956c44" tvg-name="Импульс Севера" group-title="Rutube Direct",Импульс Севера
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/342a3e4f3c9bb0d7830a52af0d956c44/index.m3u8?s=Y0b11r0lgP7ZpKDyUsTLYQ&e=2095830044&scheme=https
+https://bl.rutube.ru/livestream/342a3e4f3c9bb0d7830a52af0d956c44/index.m3u8?s=JMWDB7zY5ma-e77WZErwng&e=2095851471&scheme=https
 #EXTINF:-1 tvg-id="rtv.695f0fdefc96b6f7f2b4a311b71f596b" tvg-name="Самотлор (Нижневартовск)" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.695f0fdefc96b6f7f2b4a311b71f596b.png",Самотлор (Нижневартовск)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/695f0fdefc96b6f7f2b4a311b71f596b/index.m3u8?s=9fwYqr_0tZh5d9Voem6s1g&e=2095830044&scheme=https
+https://bl.rutube.ru/livestream/695f0fdefc96b6f7f2b4a311b71f596b/index.m3u8?s=nD5-sgf4JStK3aFALU-otg&e=2095851471&scheme=https
 #EXTINF:-1 tvg-id="rtv.b4c501ea4129408a3c195f9ae4359c0e" tvg-name="НТС (Иркутск)" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.b4c501ea4129408a3c195f9ae4359c0e.png",НТС (Иркутск)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/b4c501ea4129408a3c195f9ae4359c0e/index.m3u8?s=pV_bwRfwalxClJDhe_Nnog&e=2095830044&scheme=https
+https://bl.rutube.ru/livestream/b4c501ea4129408a3c195f9ae4359c0e/index.m3u8?s=Tfw5uIeMFMAEBDX8e3ytaw&e=2095851471&scheme=https
 #EXTINF:-1 tvg-id="rtv.ce34005d3db841e15eecb7e31749adf6" tvg-name="Евразия" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.ce34005d3db841e15eecb7e31749adf6.png",Евразия
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/ce34005d3db841e15eecb7e31749adf6/index.m3u8?s=yNALyxQcN3uO3blU3PAvwA&e=2095830045&scheme=https
+https://bl.rutube.ru/livestream/ce34005d3db841e15eecb7e31749adf6/index.m3u8?s=ZmeRfNL0JQS0C8-mfOn22w&e=2095851471&scheme=https
 #EXTINF:-1 tvg-id="rtv.333f94ef9af118c0ac51006243053e07" tvg-name="ННТВ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.333f94ef9af118c0ac51006243053e07.png",ННТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/333f94ef9af118c0ac51006243053e07/index.m3u8?s=oALYht4C5a5-gnSjFM_KJg&e=2095830045&scheme=https
+https://bl.rutube.ru/livestream/333f94ef9af118c0ac51006243053e07/index.m3u8?s=_eSrjdR8CYlxSPnOXb4mGQ&e=2095851472&scheme=https
 #EXTINF:-1 tvg-id="rtv.1839496ed8242ed47f5c540e25d4ba3f" tvg-name="МТВ Волгоград" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.1839496ed8242ed47f5c540e25d4ba3f.png",МТВ Волгоград
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/1839496ed8242ed47f5c540e25d4ba3f/index.m3u8?s=Zv8XvG-EX7c7j39bJTlbuw&e=2095830045&scheme=https
+https://bl.rutube.ru/livestream/1839496ed8242ed47f5c540e25d4ba3f/index.m3u8?s=xKw7sfjznwaJajTeI8BfGA&e=2095851472&scheme=https
 #EXTINF:-1 tvg-id="rtv.5835cd10c04311e400f2ed19b1b2fe8b" tvg-name="Енисей +4 (Орион)" group-title="Rutube Direct",Енисей +4 (Орион)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/5835cd10c04311e400f2ed19b1b2fe8b/index.m3u8?s=bAyVoOKniQCID_r2bjB4wQ&e=2095830045&scheme=https
+https://bl.rutube.ru/livestream/5835cd10c04311e400f2ed19b1b2fe8b/index.m3u8?s=lpBRIopFs1CufyMACmBCcw&e=2095851472&scheme=https
 #EXTINF:-1 tvg-id="rtv.92aa15b4975d9f63c4e0b82e3b7af463" tvg-name="БСТ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.92aa15b4975d9f63c4e0b82e3b7af463.png",БСТ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/92aa15b4975d9f63c4e0b82e3b7af463/index.m3u8?s=_ncRwmT0JThjkaXgczgwFA&e=2095830045&scheme=https
+https://bl.rutube.ru/livestream/92aa15b4975d9f63c4e0b82e3b7af463/index.m3u8?s=myz8FA7U3SwVLzFef4Chkg&e=2095851473&scheme=https
 #EXTINF:-1 tvg-id="rtv.601ca3d760de90391c18772e43d5190e" tvg-name="Юрган" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.601ca3d760de90391c18772e43d5190e.png",Юрган
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/601ca3d760de90391c18772e43d5190e/index.m3u8?s=fy266dBpD4rHf1v29Be0Kg&e=2095830045&scheme=https
+https://bl.rutube.ru/livestream/601ca3d760de90391c18772e43d5190e/index.m3u8?s=QqBLL6Q0XS23HwMLqmTvfA&e=2095851473&scheme=https
 #EXTINF:-1 tvg-id="rtv.91815da4edb167b5bd617bae490e57da" tvg-name="Царьград" group-title="Rutube Direct",Царьград
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/91815da4edb167b5bd617bae490e57da/index.m3u8?s=bEYd_I3qRwqIHYZrL9atLg&e=2095830046&scheme=https
+https://bl.rutube.ru/livestream/91815da4edb167b5bd617bae490e57da/index.m3u8?s=8998qPD1tNNzVIZ-HQIRRg&e=2095851473&scheme=https
 #EXTINF:-1 tvg-id="rtv.9927a61345cbec5aac6558f6c5454d61" tvg-name="Омск ТВ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.9927a61345cbec5aac6558f6c5454d61.png",Омск ТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/9927a61345cbec5aac6558f6c5454d61/index.m3u8?s=tK8HwM7z6aPg0XTM9rfniQ&e=2095830046&scheme=https
+https://bl.rutube.ru/livestream/9927a61345cbec5aac6558f6c5454d61/index.m3u8?s=fHSUFkYsyKBH553R09DMUw&e=2095851473&scheme=https
 #EXTINF:-1 tvg-id="rtv.68b2533a29f7de163842baf1b9dfc17e" tvg-name="ТБВ" group-title="Rutube Direct",ТБВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/68b2533a29f7de163842baf1b9dfc17e/index.m3u8?s=xtKSGS30lAEdn2ewHlQPiA&e=2095830046&scheme=https
+https://bl.rutube.ru/livestream/68b2533a29f7de163842baf1b9dfc17e/index.m3u8?s=WbvrUuxmTZ7sKsOZrPNwEg&e=2095851473&scheme=https
 #EXTINF:-1 tvg-id="rtv.31bd9a668e5dfe5feddb988c96c0998c" tvg-name="Мир Белогорья" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.31bd9a668e5dfe5feddb988c96c0998c.png",Мир Белогорья
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/31bd9a668e5dfe5feddb988c96c0998c/index.m3u8?s=sXMt_q7s4uGvzGP2Hplejg&e=2095830046&scheme=https
+https://bl.rutube.ru/livestream/31bd9a668e5dfe5feddb988c96c0998c/index.m3u8?s=zNWCKG-6emE9kX36xyj-BA&e=2095851473&scheme=https
 #EXTINF:-1 tvg-id="rtv.c0de1d61969a7fbdf6c68ca0b8a67769" tvg-name="Ямал-Регион" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.c0de1d61969a7fbdf6c68ca0b8a67769.png",Ямал-Регион
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/c0de1d61969a7fbdf6c68ca0b8a67769/index.m3u8?s=r-AgxwUyCU6kjKZUIzmpuA&e=2095830046&scheme=https
+https://bl.rutube.ru/livestream/c0de1d61969a7fbdf6c68ca0b8a67769/index.m3u8?s=f6ll8ncYUQ1Ne7dbyo1Ypw&e=2095851473&scheme=https
 #EXTINF:-1 tvg-id="rtv.671239d68ada3000a154a68efa0c7813" tvg-name="БТВ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.671239d68ada3000a154a68efa0c7813.png",БТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/671239d68ada3000a154a68efa0c7813/index.m3u8?s=lyZ8kbjY2wREo98PXH2tMg&e=2095830046&scheme=https
+https://bl.rutube.ru/livestream/671239d68ada3000a154a68efa0c7813/index.m3u8?s=dBJIqof8kqY80hMAZHf8-Q&e=2095851474&scheme=https
 #EXTINF:-1 tvg-id="rtv.15bb032337c7425983757d211713eb7d" tvg-name="Магас" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.15bb032337c7425983757d211713eb7d.png",Магас
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/15bb032337c7425983757d211713eb7d/index.m3u8?s=XqweArPtRvd8nU53Wkb6uw&e=2095830047&scheme=https
+https://bl.rutube.ru/livestream/15bb032337c7425983757d211713eb7d/index.m3u8?s=kzW79rlegBIGTTvhAnfxsw&e=2095851474&scheme=https
 #EXTINF:-1 tvg-id="rtv.b7d879feefadde4e04e516dde89012cd" tvg-name="Первый Ярославский" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.b7d879feefadde4e04e516dde89012cd.png",Первый Ярославский
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/b7d879feefadde4e04e516dde89012cd/index.m3u8?s=RwEQGOvlxoW8qOiaB3Hw2w&e=2095830047&scheme=https
+https://bl.rutube.ru/livestream/b7d879feefadde4e04e516dde89012cd/index.m3u8?s=DTdoaYWFsJpinooxtqRwlw&e=2095851474&scheme=https
 #EXTINF:-1 tvg-id="rtv.faa934385b83f9e8a92f5484defae5fa" tvg-name="ОТР" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.faa934385b83f9e8a92f5484defae5fa.png",ОТР
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/faa934385b83f9e8a92f5484defae5fa/index.m3u8?s=GMMmZk4vFQYcJaDCLpnqhA&e=2095830047&scheme=https
+https://bl.rutube.ru/livestream/faa934385b83f9e8a92f5484defae5fa/index.m3u8?s=7Uq6VpDJzUddmjZ0cK_eyw&e=2095851474&scheme=https
 #EXTINF:-1 tvg-id="rtv.503a8ac5ca6d738f05a147764f70215b" tvg-name="Истоки Орёл" group-title="Rutube Direct",Истоки Орёл
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/503a8ac5ca6d738f05a147764f70215b/index.m3u8?s=klewGttcMCF-kLCibg9bUA&e=2095830047&scheme=https
+https://bl.rutube.ru/livestream/503a8ac5ca6d738f05a147764f70215b/index.m3u8?s=g72tZcU5eDCuf458ilNPyw&e=2095851475&scheme=https
 #EXTINF:-1 tvg-id="rtv.07beff61e617797db550cc3a5f6ad92b" tvg-name="360" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.07beff61e617797db550cc3a5f6ad92b.png",360
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/07beff61e617797db550cc3a5f6ad92b/index.m3u8?s=wyeJDh0VjSp0RVDJTY8h5A&e=2095830047&scheme=https
+https://bl.rutube.ru/livestream/07beff61e617797db550cc3a5f6ad92b/index.m3u8?s=005zBijQ16nCRn5yReCxHA&e=2095851475&scheme=https
 #EXTINF:-1 tvg-id="rtv.3fd26103b82508289ef7b7f60c77d9c8" tvg-name="Прима" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.3fd26103b82508289ef7b7f60c77d9c8.png",Прима
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/3fd26103b82508289ef7b7f60c77d9c8/index.m3u8?s=Jg2XpedWVCnfF72r7P7xQA&e=2095830047&scheme=https
+https://bl.rutube.ru/livestream/3fd26103b82508289ef7b7f60c77d9c8/index.m3u8?s=RuOC-WS-bWQJwascrryUzg&e=2095851475&scheme=https
 #EXTINF:-1 tvg-id="rtv.df0faa92ca3f1d7df057c202fd4b21c4" tvg-name="АСТВ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.df0faa92ca3f1d7df057c202fd4b21c4.png",АСТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/df0faa92ca3f1d7df057c202fd4b21c4/index.m3u8?s=1fruMgVmkmzKPXUWnOyCTQ&e=2095830047&scheme=https
+https://bl.rutube.ru/livestream/df0faa92ca3f1d7df057c202fd4b21c4/index.m3u8?s=cp24_ByN-mOCuEcx2GPDbA&e=2095851475&scheme=https
 #EXTINF:-1 tvg-id="rtv.c9e26bf5c003fd8d477200065ca1a05f" tvg-name="10 канал" group-title="Rutube Direct",10 канал
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/c9e26bf5c003fd8d477200065ca1a05f/index.m3u8?s=Mh-3HpnAcgs9jrPw4p6pqA&e=2095830047&scheme=https
+https://bl.rutube.ru/livestream/c9e26bf5c003fd8d477200065ca1a05f/index.m3u8?s=WOm-Kal58FvfjZ7deZBLEA&e=2095851475&scheme=https
 #EXTINF:-1 tvg-id="rtv.7d6d8c8fc5c6e02d9c0b78eb451f3bd0" tvg-name="Канал 12" group-title="Rutube Direct",Канал 12
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/7d6d8c8fc5c6e02d9c0b78eb451f3bd0/index.m3u8?s=He1lMnSSxJl5JAKilf-_ag&e=2095830047&scheme=https
+https://bl.rutube.ru/livestream/7d6d8c8fc5c6e02d9c0b78eb451f3bd0/index.m3u8?s=Zgy9dxIhqgFH6kEJTNlRUQ&e=2095851475&scheme=https
 #EXTINF:-1 tvg-id="rtv.2bbfa9ebf9d79ade480d7281fcef1008" tvg-name="Спас" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.2bbfa9ebf9d79ade480d7281fcef1008.png",Спас
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/2bbfa9ebf9d79ade480d7281fcef1008/index.m3u8?s=5LmLmXH9hCati4K5N6AkCw&e=2095830047&scheme=https
+https://bl.rutube.ru/livestream/2bbfa9ebf9d79ade480d7281fcef1008/index.m3u8?s=-UpSXJYcp5R2iltnv-X-5Q&e=2095851475&scheme=https
 #EXTINF:-1 tvg-id="rtv.ec5267347fa50d03edba227906eba679" tvg-name="Наше Аниме" group-title="Rutube Direct",Наше Аниме
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/ec5267347fa50d03edba227906eba679/index.m3u8?s=KYjI-fjMOwL1uXl5NG11PQ&e=2094643143&scheme=https
@@ -357,25 +357,25 @@ https://bl.rutube.ru/livestream/bc2933d28daf33f5a68257ebc72787cd/index.m3u8?s=Mg
 https://bl.rutube.ru/livestream/76de13007ff82a001f786f148e9fd39a/index.m3u8?s=yWROsfmVyw4o52HoRu-UXg&e=2094643144&scheme=https
 #EXTINF:-1 tvg-id="rtv.9ad2099eed71b4a0e577292c3bfd0708" tvg-name="Радость моя" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.9ad2099eed71b4a0e577292c3bfd0708.png",Радость моя
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/9ad2099eed71b4a0e577292c3bfd0708/index.m3u8?s=S8EusWFC6JVk0fSiFWacYw&e=2095830048&scheme=https
+https://bl.rutube.ru/livestream/9ad2099eed71b4a0e577292c3bfd0708/index.m3u8?s=g1yvin765bGI60GGsZizcw&e=2095851477&scheme=https
 #EXTINF:-1 tvg-id="rtv.25a96d214a176541fba1d342ac760ee9" tvg-name="Мультаташечки" group-title="Rutube Direct",Мультаташечки
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/25a96d214a176541fba1d342ac760ee9/index.m3u8?s=KMoyHNiRvysQ72oiiuyDTA&e=2094643145&scheme=https
 #EXTINF:-1 tvg-id="rtv.2f052691c75d72b3ed7f3c33ea956a41" tvg-name="Смайлик ТВ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.2f052691c75d72b3ed7f3c33ea956a41.png",Смайлик ТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/2f052691c75d72b3ed7f3c33ea956a41/index.m3u8?s=BAkqst_WWG9PTQEgRjfrOg&e=2095830048&scheme=https
+https://bl.rutube.ru/livestream/2f052691c75d72b3ed7f3c33ea956a41/index.m3u8?s=XUmBtUnBZYItUyTcxhVv6w&e=2095851477&scheme=https
 #EXTINF:-1 tvg-id="rtv.2dba20a8405e57935827cb5721c2b759" tvg-name="Солнце" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.2dba20a8405e57935827cb5721c2b759.png",Солнце
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/2dba20a8405e57935827cb5721c2b759/index.m3u8?s=sBNCT0uCc-w2xlkmdmkG9Q&e=2094643145&scheme=https
 #EXTINF:-1 tvg-id="rtv.ed497bdb28846536f3928849f8f7e469" tvg-name="Ключайка" group-title="Rutube Direct",Ключайка
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/ed497bdb28846536f3928849f8f7e469/index.m3u8?s=5w18ZvmCbkOvq7tDWU2eVQ&e=2095830049&scheme=https
+https://bl.rutube.ru/livestream/ed497bdb28846536f3928849f8f7e469/index.m3u8?s=RkFojvOaH0tMDi1wptst7Q&e=2095851477&scheme=https
 #EXTINF:-1 tvg-id="rtv.e7e04192431a24a750fd8704fa221461" tvg-name="Музыкальные клипы" group-title="Rutube Direct",Музыкальные клипы
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/e7e04192431a24a750fd8704fa221461/index.m3u8?s=ei7-rPhO4BMgmdOQlHtu1Q&e=2095743815&scheme=https
 #EXTINF:-1 tvg-id="rtv.18eda61a347b781dd765b410133ef33a" tvg-name="Смотри Радио" group-title="Rutube Direct",Смотри Радио
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/18eda61a347b781dd765b410133ef33a/index.m3u8?s=JvUm71X9uE37Azhe6bahbg&e=2095830049&scheme=https
+https://bl.rutube.ru/livestream/18eda61a347b781dd765b410133ef33a/index.m3u8?s=D1wtCdm0pllTJt6vQ9BV0g&e=2095851477&scheme=https
 #EXTINF:-1 tvg-id="rtv.bc1b811349f526188c839d377913e16a" tvg-name="Kronehit TV" group-title="Rutube Direct",Kronehit TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/bc1b811349f526188c839d377913e16a/index.m3u8?s=t0TP2lcCuL1pbz_BvxAeoA&e=2094643146&scheme=https
@@ -384,70 +384,70 @@ https://bl.rutube.ru/livestream/bc1b811349f526188c839d377913e16a/index.m3u8?s=t0
 https://bl.rutube.ru/livestream/8e9da41366fcb497aaeade579f0d715f/index.m3u8?s=wWtCsZzjvYrxlaf7YRxQyw&e=2094643147&scheme=https
 #EXTINF:-1 tvg-id="rtv.b1eb8e90d7e636677b3eb73b4fcbb717" tvg-name="RU.TV" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.b1eb8e90d7e636677b3eb73b4fcbb717.png",RU.TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/b1eb8e90d7e636677b3eb73b4fcbb717/index.m3u8?s=P70s1Xp2BOZEdN9UdjeN8Q&e=2095830049&scheme=https
+https://bl.rutube.ru/livestream/b1eb8e90d7e636677b3eb73b4fcbb717/index.m3u8?s=DJYvvO3yTGBGOaIXqGLufg&e=2095851478&scheme=https
 #EXTINF:-1 tvg-id="rtv.df6fe73494a26f74da51573fd97b9baa" tvg-name="МузТВ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.df6fe73494a26f74da51573fd97b9baa.png",МузТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/df6fe73494a26f74da51573fd97b9baa/index.m3u8?s=2iBFgn1ebdu3sobxBU-u9g&e=2094643147&scheme=https
 #EXTINF:-1 tvg-id="rtv.5a294ae1ed12c44c7053301fb5fa9ba0" tvg-name="ТНТ Music" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.5a294ae1ed12c44c7053301fb5fa9ba0.png",ТНТ Music
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/5a294ae1ed12c44c7053301fb5fa9ba0/index.m3u8?s=_W69heBTeJIfW0MipmTXnw&e=2095830049&scheme=https
+https://bl.rutube.ru/livestream/5a294ae1ed12c44c7053301fb5fa9ba0/index.m3u8?s=pFmd8CwUyCo4UHs1kPKF-g&e=2095851479&scheme=https
 #EXTINF:-1 tvg-id="rtv.965a025e4ebbaf0957415f80c6de8534" tvg-name="ММТВ" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.965a025e4ebbaf0957415f80c6de8534.png",ММТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/965a025e4ebbaf0957415f80c6de8534/index.m3u8?s=UFC_Y_pq7I0oCQbgIYcftQ&e=2095830049&scheme=https
+https://bl.rutube.ru/livestream/965a025e4ebbaf0957415f80c6de8534/index.m3u8?s=pGmllkyUp9mpHG2UT0_xZw&e=2095851479&scheme=https
 #EXTINF:-1 tvg-id="rtv.047ba54d846ee185b4209a797a2ae138" tvg-name="Now Rock" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.047ba54d846ee185b4209a797a2ae138.png",Now Rock
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/047ba54d846ee185b4209a797a2ae138/index.m3u8?s=ZafHbadYIXy82lLijlDWHw&e=2094643148&scheme=https
 #EXTINF:-1 tvg-id="rtv.d1dff14680d4c84e27908983375f7e89" tvg-name="МузСоюз" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.d1dff14680d4c84e27908983375f7e89.png",МузСоюз
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/d1dff14680d4c84e27908983375f7e89/index.m3u8?s=RH_PM_ujF8L0DZ86_piTrQ&e=2095830049&scheme=https
+https://bl.rutube.ru/livestream/d1dff14680d4c84e27908983375f7e89/index.m3u8?s=ActQ98M7f0Ff-07jeX55XQ&e=2095851479&scheme=https
 #EXTINF:-1 tvg-id="rtv.351f0e84a7db69a73658bbf61debcf62" tvg-name="Record Супердискотека 90х" group-title="Rutube Direct",Record Супердискотека 90х
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/351f0e84a7db69a73658bbf61debcf62/index.m3u8?s=zW9co2iLIkG1ne65INg6vw&e=2095830050&scheme=https
+https://bl.rutube.ru/livestream/351f0e84a7db69a73658bbf61debcf62/index.m3u8?s=_OWWFhsTGvr-w_42htFhtQ&e=2095851479&scheme=https
 #EXTINF:-1 tvg-id="rtv.c7b8a6f89c95f9d224d7811d4489d5f7" tvg-name="Record Big Hits" group-title="Rutube Direct",Record Big Hits
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/c7b8a6f89c95f9d224d7811d4489d5f7/index.m3u8?s=8dz1WEVXeXPczEg69s76OQ&e=2095830050&scheme=https
+https://bl.rutube.ru/livestream/c7b8a6f89c95f9d224d7811d4489d5f7/index.m3u8?s=o9kpl8tsk8IfdaaFQAjpnw&e=2095851479&scheme=https
 #EXTINF:-1 tvg-id="rtv.a1bad1d3fee40a92df8f3d8d3de16821" tvg-name="Record Rock" group-title="Rutube Direct",Record Rock
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/a1bad1d3fee40a92df8f3d8d3de16821/index.m3u8?s=QxbKnY08BPwfY1OYQctIWA&e=2095830050&scheme=https
+https://bl.rutube.ru/livestream/a1bad1d3fee40a92df8f3d8d3de16821/index.m3u8?s=W4dBPV-_49THES0zaOgsHg&e=2095851479&scheme=https
 #EXTINF:-1 tvg-id="rtv.21675e5154442266a0c154f168a6b019" tvg-name="Record Dance Radio" group-title="Rutube Direct",Record Dance Radio
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/21675e5154442266a0c154f168a6b019/index.m3u8?s=iYQsUmT85fOSAEb5KzWs_Q&e=2095830050&scheme=https
+https://bl.rutube.ru/livestream/21675e5154442266a0c154f168a6b019/index.m3u8?s=PwqsnegKHP9TLZgMF3rXNQ&e=2095851479&scheme=https
 #EXTINF:-1 tvg-id="rtv.b5f4e1d43e11888455a0a66f0872e77b" tvg-name="Record Russian Hits" group-title="Rutube Direct",Record Russian Hits
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/b5f4e1d43e11888455a0a66f0872e77b/index.m3u8?s=ey3AHTiDpw1I9yyqF34hjw&e=2095830050&scheme=https
+https://bl.rutube.ru/livestream/b5f4e1d43e11888455a0a66f0872e77b/index.m3u8?s=MX8YGmiwf76P4JTmaBhgmw&e=2095851480&scheme=https
 #EXTINF:-1 tvg-id="rtv.b575eaf54bd00d5fb079c55988bc0f24" tvg-name="Record Гоп FM" group-title="Rutube Direct",Record Гоп FM
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/b575eaf54bd00d5fb079c55988bc0f24/index.m3u8?s=tvmSAz8oO8YqJO1G73h-Sg&e=2095830050&scheme=https
+https://bl.rutube.ru/livestream/b575eaf54bd00d5fb079c55988bc0f24/index.m3u8?s=IfwgC_XaqTY9slqVcm48tQ&e=2095851480&scheme=https
 #EXTINF:-1 tvg-id="rtv.60b73481dcc9880850f22690142c8d17" tvg-name="Record Megamix" group-title="Rutube Direct",Record Megamix
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/60b73481dcc9880850f22690142c8d17/index.m3u8?s=SN93zmQTfOcimvHuQswX4A&e=2095830050&scheme=https
+https://bl.rutube.ru/livestream/60b73481dcc9880850f22690142c8d17/index.m3u8?s=oVAgeFbJjtfnWHdedsXIHQ&e=2095851480&scheme=https
 #EXTINF:-1 tvg-id="rtv.2f3e5c6a66617c063f12d8d5d49248c7" tvg-name="Record Russian Mix" group-title="Rutube Direct",Record Russian Mix
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/2f3e5c6a66617c063f12d8d5d49248c7/index.m3u8?s=sQQ5YUV1LRwvB-tjO0wIGQ&e=2095830050&scheme=https
+https://bl.rutube.ru/livestream/2f3e5c6a66617c063f12d8d5d49248c7/index.m3u8?s=YANFwXEKRz7kVsO7G9iR8Q&e=2095851481&scheme=https
 #EXTINF:-1 tvg-id="rtv.9249feec1c78e5414f68ecf40a6645d2" tvg-name="Record Deep" group-title="Rutube Direct",Record Deep
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/9249feec1c78e5414f68ecf40a6645d2/index.m3u8?s=z_rwOYUl6-Qsl-ZgUTdt1Q&e=2095830051&scheme=https
+https://bl.rutube.ru/livestream/9249feec1c78e5414f68ecf40a6645d2/index.m3u8?s=RAzNjwoW91i-v_Wj-t8cRA&e=2095851480&scheme=https
 #EXTINF:-1 tvg-id="rtv.f972da70f03eee3d14fcff4113a8b6e4" tvg-name="Record Phonk" group-title="Rutube Direct",Record Phonk
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/f972da70f03eee3d14fcff4113a8b6e4/index.m3u8?s=YS0hAIyYpsQsQXTKgmKr8Q&e=2095830051&scheme=https
+https://bl.rutube.ru/livestream/f972da70f03eee3d14fcff4113a8b6e4/index.m3u8?s=UnWJC7Q1jDQnPAZS_rjdpQ&e=2095851481&scheme=https
 #EXTINF:-1 tvg-id="rtv.149b862a6f45faed8800e28c15066c21" tvg-name="Record Chill House" group-title="Rutube Direct",Record Chill House
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/149b862a6f45faed8800e28c15066c21/index.m3u8?s=JMm63WbHE8TC9mQvoDTUdg&e=2095830051&scheme=https
+https://bl.rutube.ru/livestream/149b862a6f45faed8800e28c15066c21/index.m3u8?s=BTHrOkU_o6PRUtMjfltSoA&e=2095851481&scheme=https
 #EXTINF:-1 tvg-id="rtv.dc756dfadfdb320e9cec39b35def79e3" tvg-name="Record Drum n Bass" group-title="Rutube Direct",Record Drum n Bass
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/dc756dfadfdb320e9cec39b35def79e3/index.m3u8?s=Cv6QK_1bcw4zeLTS_s8cng&e=2095830051&scheme=https
+https://bl.rutube.ru/livestream/dc756dfadfdb320e9cec39b35def79e3/index.m3u8?s=wO0xxk6Prev5KwxMkGgqiA&e=2095851481&scheme=https
 #EXTINF:-1 tvg-id="rtv.6ad623fe9b908f3823c47e77cd981cd4" tvg-name="Record Chill-Out" group-title="Rutube Direct",Record Chill-Out
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/6ad623fe9b908f3823c47e77cd981cd4/index.m3u8?s=YBzF6rtBsPI6s2Qkq8Jrgw&e=2095830051&scheme=https
+https://bl.rutube.ru/livestream/6ad623fe9b908f3823c47e77cd981cd4/index.m3u8?s=8cq97MHGDdLPbfcFgGHlcQ&e=2095851481&scheme=https
 #EXTINF:-1 tvg-id="rtv.a385dcd78395ea7740d1aed28980fe6c" tvg-name="Record Techno by Innocence" group-title="Rutube Direct",Record Techno by Innocence
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/a385dcd78395ea7740d1aed28980fe6c/index.m3u8?s=ksjhc5HjRg189kGDsc29YQ&e=2095830051&scheme=https
+https://bl.rutube.ru/livestream/a385dcd78395ea7740d1aed28980fe6c/index.m3u8?s=PF_TV0WM8I02tDviquPuAA&e=2095851481&scheme=https
 #EXTINF:-1 tvg-id="rtv.26aeb9043f519687846255556ee891aa" tvg-name="Record Trance" group-title="Rutube Direct",Record Trance
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/26aeb9043f519687846255556ee891aa/index.m3u8?s=4PE8ziUH6iRucWMhc8pfXg&e=2095830051&scheme=https
+https://bl.rutube.ru/livestream/26aeb9043f519687846255556ee891aa/index.m3u8?s=WnEkr7UYXO77mp8kKX00Vw&e=2095851481&scheme=https
 #EXTINF:-1 tvg-id="rtv.f712ae5ff3db23ec09b3674133d44daa" tvg-name="VIVA Russia HD" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.f712ae5ff3db23ec09b3674133d44daa.png",VIVA Russia HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/f712ae5ff3db23ec09b3674133d44daa/index.m3u8?s=oWcbvCAmPxsTw94BKsNIrQ&e=2095830051&scheme=https
+https://bl.rutube.ru/livestream/f712ae5ff3db23ec09b3674133d44daa/index.m3u8?s=tiMB_zQQUo9Hz3u3-wJISw&e=2095851482&scheme=https
 #EXTINF:-1 tvg-id="rtv.11bbbec75a2ceb8cf446ad16813c6eec" tvg-name="Матч ТВ HD" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.11bbbec75a2ceb8cf446ad16813c6eec.png",Матч ТВ HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/11bbbec75a2ceb8cf446ad16813c6eec/index.m3u8?s=XfzKC86TNyJCpgzwKqn4Zg&e=2094643153&scheme=https
@@ -489,7 +489,7 @@ https://bl.rutube.ru/livestream/9f28acb802549828d3ce7fbd8ecc17d3/index.m3u8?s=rN
 https://bl.rutube.ru/livestream/05550e441b09aeec53e60de66b6c47bf/index.m3u8?s=uu8JyQ0yxCIIRbC-0_vLvQ&e=2094643156&scheme=https
 #EXTINF:-1 tvg-id="rtv.cc1b56aa4955a144f324ad58998513bb" tvg-name="Волейбол" group-title="Rutube Direct" tvg-logo="https://trufan-hub.github.io/iptv-direct/logos/rtv.cc1b56aa4955a144f324ad58998513bb.png",Волейбол
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
-https://bl.rutube.ru/livestream/cc1b56aa4955a144f324ad58998513bb/index.m3u8?s=Nnhf1vAk9a5JH2ObZJlAhQ&e=2095830053&scheme=https
+https://bl.rutube.ru/livestream/cc1b56aa4955a144f324ad58998513bb/index.m3u8?s=2A7zjS8h4ZKom0o9rRMkiA&e=2095851484&scheme=https
 #EXTINF:-1 tvg-id="rtv.efc2833169ec20a3ea61197714bea6ab" tvg-name="Unbeaten" group-title="Rutube Direct",Unbeaten
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/efc2833169ec20a3ea61197714bea6ab/index.m3u8?s=yN8YVKQT6BUcNXT7-N0nFQ&e=2094643157&scheme=https
